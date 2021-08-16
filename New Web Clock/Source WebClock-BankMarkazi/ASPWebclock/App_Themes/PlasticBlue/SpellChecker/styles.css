@@ -1,0 +1,49 @@
+/* -- ASPxSpellChecker -- */
+#dxMainSpellCheckFormTable .buttonsCell,
+#dxMainSpellCheckOptionsFormTable .buttonsCell
+{
+	border-top: solid 1px #E0E0E0;		
+}
+.dxwscLoadingDiv_PlasticBlue
+{
+	background-color:Gray;	
+	opacity: 0.01;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=1);
+}
+.dxwscCheckedTextContainer_PlasticBlue
+{
+	background-color: white;
+	font-size: 9pt;
+	font-family: Tahoma, Verdana, Arial;
+	border: solid 1px #b8b8b8;
+	vertical-align:top;
+	overflow:auto;
+	width: 340px;	
+	height: 110px;
+	padding: 5px;
+
+}
+.dxwscErrorWord_PlasticBlue
+{
+	background: url('scErrorUnderline.gif') bottom;
+	background-repeat:repeat-x;
+	padding-bottom: 3px;
+	font-weight: bold;
+}
+.dxwscLoadingPanel_PlasticBlue
+{
+	border:solid 1px #CCCCCC;
+	background-color: #E8E8E8;
+	font: 9pt Tahoma;
+	color: #303030;
+}
+.dxwscLoadingPanel_PlasticBlue td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px 12px 12px;
+}
+.footerBackground 
+{
+	background-color: #E9E9E9;
+}

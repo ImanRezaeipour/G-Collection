@@ -1,0 +1,29 @@
+﻿.gridStyle
+{ 
+  border: 1px solid #9495A2; 
+  background-color:	#E6E6FA; 
+  cursor: pointer;
+  font-family:Tahoma;
+  font-size:small;
+  color:Black;
+}
+
+.gridSelectedRowStyle
+{
+    background-color: #FFEEC2;
+    font-family: Tahoma;
+    font-size: small;
+}
+
+.gridCustomCellStyle
+{
+   color:Blue;
+   background-color:#DDA0DD;
+   direction:ltr;
+}
+
+.gridHeaderStyle
+{
+    color:White;
+    background-color:#6A5ACD;
+}

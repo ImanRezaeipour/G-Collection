@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ghadir_UI.ACC1000" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BGAQAAAAABBAAACIIAAAAAIAAAABAAACAABABCAAAAI=</HashCode>
+      <FileName>Classes\ACC1000.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.AcccessCodeGroup" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAABEAAAAEAAAABAAAAEAAAEAAAAAAAAAAI=</HashCode>
+      <FileName>Classes\AccessCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.AlarmGroup" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAEAAAAEAAAAEAAAAAAAAAEAEAEAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\AlarmGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.Error" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAgAAAAAAAAAAAAAAAAAACAQAAgAABAAAA=</HashCode>
+      <FileName>Classes\anerror.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.AuthorityListGroup" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAEAAAAEAAAAEAAAAAgAAAEAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\AuthorityListGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.AuthorizedCardGroup" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAEAAAAEAAAAEAAAAAgAAAEAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\AuthorizedCardList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.CardListGroup" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAEAAAAEAAAAEAAAAAgAAAEAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\CardList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.CardNumber" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAEAAAAAAAAAEABAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\CardNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.CLK6000" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DCAQIAAAAABIAAEIAIAQAAIACAABAAAAAIAABAEAAAI=</HashCode>
+      <FileName>Classes\CLK6000.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.OneRecord" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAABAAAAAAAAAAgAAIABAAAAAAAAAAABAABAAQAAAQA=</HashCode>
+      <FileName>Classes\CollectedRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.CollectedRecords" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAAAAAAABAAAQgAAAQAAEAAAACAAAACAiBgAAE=</HashCode>
+      <FileName>Classes\CollectedRecords.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.ErrorTable" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAgAAAAAgAEAAAAAEAAgAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Classes\ErrorTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.IOBase">
+    <Position X="3" Y="4" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Ghadir_UI.IOBase.CommunicationStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\IOBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Ghadir_UI.IOBase.CommunicationLiberty" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\IOBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAEAAAIgDQAEACBAIAAAEQAABAAhABAAAIAA=</HashCode>
+      <FileName>Classes\IOBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.LogPacket" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAgAAIAAAAIBACEAEBABCAABUAAAAAIgAAAAAAA=</HashCode>
+      <FileName>Classes\LogPacket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.MTT5000" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAEAAAACAAAgAAEBAAAAgAgAAAAAAAA=</HashCode>
+      <FileName>Classes\MTT5000.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.Network" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Ghadir_UI.Network.SendEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\Newtwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Ghadir_UI.Network.ReceiveEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\Newtwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Ghadir_UI.Network.ErrorOnConnection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\Newtwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Ghadir_UI.Network.ErrorOnSend" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\Newtwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Ghadir_UI.Network.ErrorOnReceive" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\Newtwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="Ghadir_UI.Network.NetworkErrorValue" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\Newtwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AASAAAIAQEACAgAAEAAQABAALAIGBAABAAgACAAYIAQ=</HashCode>
+      <FileName>Classes\Newtwork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.PacketInfo" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAACIAIAgBAAAIAAABASAAAAQAAAAAIASAAgBAAE=</HashCode>
+      <FileName>Classes\PacketInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.SerialIO" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Ghadir_UI.SerialIO.SerialPortErrorValue" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\SerialIO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="Ghadir_UI.SerialIO.SendEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\SerialIO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Ghadir_UI.SerialIO.ReceiveEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\SerialIO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAaAAAAAAEAAAEDAEAgwABACiAgEBAABACkAAEAAIAA=</HashCode>
+      <FileName>Classes\SerialIO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Ghadir_UI.Utility" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAASAAAAAEiwgAAAAAAAAAAAAAAAAAAAAUAAAQAA=</HashCode>
+      <FileName>Classes\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.Z84Family" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>LGWRuF6a+pT7blffIN32JxpwDlMPZFAXoK9hTqHkUL4=</HashCode>
+      <FileName>Classes\Z84Family.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ghadir_UI.Z84Frame" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AApBCBQHEAAQAQAAiAAENAAACAAIAAIGgCAAAQADAFI=</HashCode>
+      <FileName>Classes\Z84Frame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHSDK.Properties.Resources" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Ghadir_UI.IOInterface" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Classes\interface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

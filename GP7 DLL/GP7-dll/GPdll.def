@@ -1,0 +1,22 @@
+LIBRARY GP7-dll
+EXPORTS
+	Open_Serial
+	Close_Serial
+	Open_Ehternet
+	Close_Ehternet
+	CLOSE
+	Open_Usb
+	Close_Usb
+	ConvertToShamsi
+	Set_Time
+	Get_Time
+	Set_Date
+	Get_Date
+	Test_Connect
+	Collect_Record
+	Get_UserInfo
+	Enroll_User
+	Delete_Person
+	Delete_AllPerson
+	Get_NumPerson
+	Get_AllPerson

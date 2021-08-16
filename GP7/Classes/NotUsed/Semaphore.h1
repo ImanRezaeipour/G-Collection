@@ -1,0 +1,12 @@
+#include "DATATYPE.H"
+
+class Semaphore{
+public:
+  Semaphore();
+  ~Semaphore();
+  
+  void  Signal(void);
+  void  Wait(void);
+private:
+  BYTE  sema;
+};

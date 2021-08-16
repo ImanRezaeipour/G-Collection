@@ -1,0 +1,53 @@
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\obj\Debug\ASPWebclock.csprojResolveAssemblyReference.cache
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\obj\Debug\HelpNWClock.Help.resources
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\obj\Debug\ASPWebclock.RPRest.resources
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\obj\Debug\HelpNWClock.Help.fa.resources
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\obj\Debug\ASPWebclock.csproj.GenerateResource.Cache
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\Web.config
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\Operation\RemainLeave.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\taradode afrad az terminal.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\ezafe kar.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\ezafe kari va keshik.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\gheibat.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\hozor va ghiab dar lahze.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\kasri kar bish az had.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\kholase ezafe kar va keshik mahane.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\kholase gheibat.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\kholase kasri kar.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\kholase taradode naghes.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\mashrohe ezafe kar 5 shanbe.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\mashrohe ezafe kar va keshik mahiane.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\mashrohe gheibat.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\mashrohe kasri kar.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\mojavez rozane.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\mojavez saati.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\morakhasi estehghaghi va mande.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\personel list as part.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\prsonel list as job.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\rekord haie eslaah shode.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\ReportMonthly.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\taradode naghes.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ReportFile\vorod va khoroj persenel.mrt
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ASPWebclock.dll
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ASPWebclock.pdb
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\fa\ASPWebclock.resources.dll
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ASPWebClock.DAL.dll
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DAL.dll
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\ASPWebClock.DAL.pdb
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DAL.pdb
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DevExpress.Data.v11.1.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DevExpress.Utils.v11.1.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DevExpress.Web.ASPxEditors.v11.1.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DevExpress.Web.ASPxGridView.v11.1.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DevExpress.Web.ASPxTreeList.v11.1.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DevExpress.Web.v11.1.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DevExpress.XtraReports.v11.1.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DevExpress.XtraReports.v11.1.Web.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\DevExpress.XtraTreeList.v11.1.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\Stimulsoft.Base.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\Stimulsoft.Report.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\bin\Stimulsoft.Report.Web.xml
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\obj\Debug\fa\ASPWebclock.resources.dll
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\obj\Debug\ASPWebclock.dll
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\obj\Debug\ASPWebclock.pdb
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\ASPWebclock\obj\Debug\ASPWebclock.dll.licenses

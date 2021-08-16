@@ -1,0 +1,123 @@
+#ifndef 	__CONTROL__
+#define 	__CONTROL__
+
+#include	"RTOS.H"
+#include	"DATATYPE.H"
+#include	"BUFFER.H"
+#include        "PERSONAL.H"
+
+//#define IAP_ADDRESS 0x7FFFFFF1
+
+enum ControlMessage
+{
+	CM_None = 0,
+	CM_Enter,
+	CM_Exit,
+	CM_Mission,
+	CM_Vacation,
+	CM_InvalidFingerPresent
+};
+/*
+typedef struct              //kkk Serial Number IC
+{
+  unsigned int ReturnCode;
+  unsigned int Result[4];
+}IAP_return_TypeDef;
+*/
+
+class Control
+{
+public:
+	Control ();
+        ~Control ();
+
+	void Initial (void);
+
+	void Run (void);
+
+        void InitialDevices (void);
+        bool Send_unique(char *Command,char *Code);
+       // bool read_serial_number(void);
+	
+private:
+       
+     //   unsigned param_table[5];
+     //   void iap_entry(unsigned param_tab[],unsigned result_tab[]);
+        void ReadDeviceID(void);
+        bool Check_SendByteTrue(char ba);
+        
+	void initial_hardware(void);
+
+	void initial_dac (void);	
+	void initial_rtc (void);
+	
+	void initial_led (void);
+	void initial_backlight (void);
+	void initial_lcd (void);
+
+	void initial_finger (void);
+	void initial_mifare (void);
+	void initial_com (void);
+	void initial_network (void);
+	void initial_key (void);
+	void initial_usb (void);
+
+	void initial_file_system (void);
+	void initial_os (void);
+	
+	void initial_settings (void);
+
+	void initial_log (void);
+	void initial_menu (void);
+	void initial_personal (void);
+        void initial_communication (void);
+	
+	void initial_notify (void);
+	void initial_view (void);
+	void initial_status (void);
+	void initial_sound (void);
+	void initial_alarm (void);
+        void initial_beep (void);
+
+	void pre_initial (void);
+	void post_initial (void);
+
+	void initial_unique(void);
+	bool ceck_unique(void);
+        void Make_PacketSpi(char *Buff);
+	
+  	static void E_mifare_card_present (void);
+  	static void E_valid_finger_present (DWORD FingerID);
+	static void E_invalid_finger_present (void);
+	static void E_any_key_press (void);
+	static void E_exit_menu (void);
+	static void E_lan_cable_connect (void);
+	static void E_lan_cable_disconnect (void);
+	static void E_usb_cable_connect (void);
+	static void E_usb_cable_disconnect (void);
+        static void E_modem_cable_connect (void);
+	static void E_modem_cable_disconnect (void);
+	static void E_traffic_save (TrafficInformation *);
+	static void E_timeout_input (void);
+	
+	static void timer_elapse_key (void);
+	static void timer_elapse_precard (void);
+	static void timer_elapse_special (void);
+
+        static void show_last_traffics (void);
+	
+	static string get_appropriate_message (ControlMessage index, Language l);
+	
+	static OS_TIMER timer_key;
+	static OS_TIMER timer_precard;
+	static OS_TIMER timer_special;
+	
+	static bool enter_menu;
+	static Buffer keypad_data;
+	static PreCard current_pre_card;
+
+        static TrafficInformation last_traffic[3];
+        static int last_traffic_count;
+};
+
+#endif

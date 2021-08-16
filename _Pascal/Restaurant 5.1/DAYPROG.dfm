@@ -1,0 +1,645 @@
+object frmSobhInf: TfrmSobhInf
+  Left = 4
+  Top = 88
+  HelpContext = 205
+  BiDiMode = bdRightToLeft
+  BorderStyle = bsDialog
+  Caption = #1576#1585#1606#1575#1605#1607' '#1585#1610#1586#1610
+  ClientHeight = 287
+  ClientWidth = 617
+  Color = clBtnFace
+  Font.Charset = ARABIC_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Arabic Transparent'
+  Font.Style = []
+  OldCreateOrder = True
+  ParentBiDiMode = False
+  Position = poScreenCenter
+  Scaled = False
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 523
+    Top = 24
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &1'
+    FocusControl = cmb1
+  end
+  object Label2: TLabel
+    Left = 523
+    Top = 48
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &2'
+    FocusControl = cmb2
+  end
+  object Label3: TLabel
+    Left = 523
+    Top = 73
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &3'
+    FocusControl = cmb3
+  end
+  object Label4: TLabel
+    Left = 523
+    Top = 96
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &4'
+    FocusControl = cmb4
+  end
+  object Label5: TLabel
+    Left = 523
+    Top = 120
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &5'
+    FocusControl = cmb5
+  end
+  object Label6: TLabel
+    Left = 523
+    Top = 144
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &6'
+    FocusControl = cmb6
+  end
+  object Label7: TLabel
+    Left = 523
+    Top = 168
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &7'
+    FocusControl = cmb7
+  end
+  object Label8: TLabel
+    Left = 523
+    Top = 192
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &8'
+    FocusControl = cmb8
+  end
+  object Label11: TLabel
+    Left = 261
+    Top = 0
+    Width = 61
+    Height = 15
+    Caption = #1603#1604#1610#1583' 9 - '#1603#1575#1605#1604
+  end
+  object Label12: TLabel
+    Left = 67
+    Top = 0
+    Width = 69
+    Height = 15
+    Caption = #1603#1604#1610#1583' 0 - '#1585#1688#1610#1605#1610
+  end
+  object lblDate: TLabel
+    Left = 493
+    Top = 0
+    Width = 39
+    Height = 15
+    Caption = 'lblDate'
+    Font.Charset = ARABIC_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Arabic Transparent'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 405
+    Top = 0
+    Width = 17
+    Height = 15
+    Caption = #1570#1605#1575#1585
+  end
+  object Label10: TLabel
+    Left = 586
+    Top = 16
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &1'
+    FocusControl = cmb1
+  end
+  object Label13: TLabel
+    Left = 586
+    Top = 40
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &2'
+    FocusControl = cmb2
+  end
+  object Label14: TLabel
+    Left = 586
+    Top = 63
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &3'
+    FocusControl = cmb3
+  end
+  object Label15: TLabel
+    Left = 586
+    Top = 88
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &4'
+    FocusControl = cmb4
+  end
+  object Label16: TLabel
+    Left = 586
+    Top = 112
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &5'
+    FocusControl = cmb5
+  end
+  object Label17: TLabel
+    Left = 586
+    Top = 136
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &6'
+    FocusControl = cmb6
+  end
+  object Label18: TLabel
+    Left = 586
+    Top = 160
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &7'
+    FocusControl = cmb7
+  end
+  object Label19: TLabel
+    Left = 586
+    Top = 184
+    Width = 26
+    Height = 15
+    Caption = #1603#1604#1610#1583' &8'
+    FocusControl = cmb8
+  end
+  object cmb1: TComboBox
+    Left = 432
+    Top = 17
+    Width = 145
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 0
+    OnClick = cmb1Click
+    OnEnter = cmb1Enter
+    OnKeyPress = cmb1KeyPress
+  end
+  object cmb2: TComboBox
+    Left = 432
+    Top = 40
+    Width = 145
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 2
+    OnChange = cmb1Click
+    OnEnter = cmb2Enter
+    OnKeyPress = cmb2KeyPress
+  end
+  object cmb3: TComboBox
+    Left = 432
+    Top = 63
+    Width = 145
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 4
+    OnChange = cmb1Click
+    OnEnter = cmb3Enter
+    OnKeyPress = cmb3KeyPress
+  end
+  object cmb4: TComboBox
+    Left = 432
+    Top = 88
+    Width = 145
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 6
+    OnChange = cmb1Click
+    OnEnter = cmb4Enter
+    OnKeyPress = cmb4KeyPress
+  end
+  object cmb5: TComboBox
+    Left = 432
+    Top = 112
+    Width = 145
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 8
+    OnChange = cmb1Click
+    OnEnter = cmb5Enter
+    OnKeyPress = cmb5KeyPress
+  end
+  object cmb6: TComboBox
+    Left = 432
+    Top = 136
+    Width = 145
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 10
+    OnChange = cmb1Click
+    OnEnter = cmb6Enter
+    OnKeyPress = cmb6KeyPress
+  end
+  object cmb7: TComboBox
+    Left = 432
+    Top = 160
+    Width = 145
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 12
+    OnChange = cmb1Click
+    OnEnter = cmb7Enter
+    OnKeyPress = cmb7KeyPress
+  end
+  object cmb8: TComboBox
+    Left = 432
+    Top = 184
+    Width = 145
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 14
+    OnChange = cmb1Click
+    OnEnter = cmb8Enter
+    OnKeyPress = cmb8KeyPress
+  end
+  object lstAll: TListBox
+    Left = 199
+    Top = 16
+    Width = 194
+    Height = 183
+    Style = lbOwnerDrawVariable
+    Font.Charset = ARABIC_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arabic Transparent'
+    Font.Style = []
+    IntegralHeight = True
+    ItemHeight = 24
+    Items.Strings = (
+      ' '
+      ' '
+      ' '
+      ' '
+      ' '
+      ' '
+      ' '
+      ' ')
+    ParentFont = False
+    TabOrder = 16
+    OnDblClick = lstAllDblClick
+    OnKeyDown = lstAllKeyDown
+    OnKeyPress = lstAllKeyPress
+  end
+  object lstRejim: TListBox
+    Left = 8
+    Top = 16
+    Width = 193
+    Height = 193
+    Style = lbOwnerDrawVariable
+    Font.Charset = ARABIC_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arabic Transparent'
+    Font.Style = []
+    ItemHeight = 24
+    Items.Strings = (
+      ' '
+      ' '
+      ' '
+      ' '
+      ' '
+      ' '
+      ' '
+      ' ')
+    ParentFont = False
+    TabOrder = 17
+    OnDblClick = lstRejimDblClick
+    OnKeyDown = lstRejimKeyDown
+    OnKeyPress = lstRejimKeyPress
+  end
+  object cmdDelAll: TBitBtn
+    Left = 209
+    Top = 216
+    Width = 88
+    Height = 25
+    Caption = '&'#1581#1584#1601
+    TabOrder = 21
+    OnClick = cmdDelAllClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      3333333333333333333333333333333333333333333FF3333333333333003333
+      3333333333773FF3333333333309003333333333337F773FF333333333099900
+      33333FFFFF7F33773FF30000000999990033777777733333773F099999999999
+      99007FFFFFFF33333F7700000009999900337777777F333F7733333333099900
+      33333333337F3F77333333333309003333333333337F77333333333333003333
+      3333333333773333333333333333333333333333333333333333333333333333
+      3333333333333333333333333333333333333333333333333333}
+    NumGlyphs = 2
+  end
+  object cmdAddAll: TBitBtn
+    Left = 296
+    Top = 216
+    Width = 89
+    Height = 25
+    Caption = #1575'&'#1601#1586#1608#1583#1606
+    TabOrder = 20
+    OnClick = cmdAddAllClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      3333333333333FF3333333333333003333333333333F77F33333333333009033
+      333333333F7737F333333333009990333333333F773337FFFFFF330099999000
+      00003F773333377777770099999999999990773FF33333FFFFF7330099999000
+      000033773FF33777777733330099903333333333773FF7F33333333333009033
+      33333333337737F3333333333333003333333333333377333333333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      3333333333333333333333333333333333333333333333333333}
+    Layout = blGlyphRight
+    NumGlyphs = 2
+  end
+  object cmdNone: TBitBtn
+    Left = 440
+    Top = 216
+    Width = 65
+    Height = 25
+    Caption = #1607'&'#1610#1670
+    TabOrder = 19
+    OnClick = cmdNoneClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      3333333333333333333333333333333333333333333FF3333333333333003333
+      3333333333773FF3333333333309003333333333337F773FF333333333099900
+      33333FFFFF7F33773FF30000000999990033777777733333773F099999999999
+      99007FFFFFFF33333F7700000009999900337777777F333F7733333333099900
+      33333333337F3F77333333333309003333333333337F77333333333333003333
+      3333333333773333333333333333333333333333333333333333333333333333
+      3333333333333333333333333333333333333333333333333333}
+    NumGlyphs = 2
+  end
+  object cmdSave: TBitBtn
+    Left = 280
+    Top = 256
+    Width = 97
+    Height = 25
+    Caption = '&'#1579#1576#1578
+    TabOrder = 24
+    OnClick = cmdSaveClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+      555555FFFFFFFFFF5F5557777777777505555777777777757F55555555555555
+      055555555555FF5575F555555550055030555555555775F7F7F55555550FB000
+      005555555575577777F5555550FB0BF0F05555555755755757F555550FBFBF0F
+      B05555557F55557557F555550BFBF0FB005555557F55575577F555500FBFBFB0
+      305555577F555557F7F5550E0BFBFB003055557575F55577F7F550EEE0BFB0B0
+      305557FF575F5757F7F5000EEE0BFBF03055777FF575FFF7F7F50000EEE00000
+      30557777FF577777F7F500000E05555BB05577777F75555777F5500000555550
+      3055577777555557F7F555000555555999555577755555577755}
+    NumGlyphs = 2
+  end
+  object cmdHelp: TBitBtn
+    Left = 144
+    Top = 256
+    Width = 99
+    Height = 25
+    Caption = #1585#1575'&'#1607#1606#1605#1575
+    TabOrder = 25
+    Kind = bkHelp
+  end
+  object cmdCancel: TBitBtn
+    Left = 8
+    Top = 256
+    Width = 99
+    Height = 25
+    Caption = '&'#1575#1606#1589#1585#1575#1601
+    TabOrder = 26
+    Kind = bkCancel
+  end
+  object cmdAll: TBitBtn
+    Left = 504
+    Top = 216
+    Width = 65
+    Height = 25
+    Caption = #1607'&'#1605#1607
+    TabOrder = 18
+    OnClick = cmdAllClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      3333333333333FF3333333333333003333333333333F77F33333333333009033
+      333333333F7737F333333333009990333333333F773337FFFFFF330099999000
+      00003F773333377777770099999999999990773FF33333FFFFF7330099999000
+      000033773FF33777777733330099903333333333773FF7F33333333333009033
+      33333333337737F3333333333333003333333333333377333333333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      3333333333333333333333333333333333333333333333333333}
+    Layout = blGlyphRight
+    NumGlyphs = 2
+  end
+  object cmdNext: TBitBtn
+    Left = 520
+    Top = 256
+    Width = 91
+    Height = 25
+    Caption = #1585#1608#1586' '#1576'&'#1593#1583
+    TabOrder = 27
+    OnClick = cmdNextClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      33333FF3333333333333447333333333333377FFF33333333333744473333333
+      333337773FF3333333333444447333333333373F773FF3333333334444447333
+      33333373F3773FF3333333744444447333333337F333773FF333333444444444
+      733333373F3333773FF333334444444444733FFF7FFFFFFF77FF999999999999
+      999977777777777733773333CCCCCCCCCC3333337333333F7733333CCCCCCCCC
+      33333337F3333F773333333CCCCCCC3333333337333F7733333333CCCCCC3333
+      333333733F77333333333CCCCC333333333337FF7733333333333CCC33333333
+      33333777333333333333CC333333333333337733333333333333}
+    Layout = blGlyphRight
+    NumGlyphs = 2
+  end
+  object cmdPrior: TBitBtn
+    Left = 424
+    Top = 256
+    Width = 91
+    Height = 25
+    Caption = #1585#1608#1586' &'#1602#1576#1604
+    TabOrder = 28
+    OnClick = cmdPriorClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      333333333333333333FF3333333333333744333333333333F773333333333337
+      44473333333333F777F3333333333744444333333333F7733733333333374444
+      4433333333F77333733333333744444447333333F7733337F333333744444444
+      433333F77333333733333744444444443333377FFFFFFF7FFFFF999999999999
+      9999733777777777777333CCCCCCCCCC33333773FF333373F3333333CCCCCCCC
+      C333333773FF3337F333333333CCCCCCC33333333773FF373F3333333333CCCC
+      CC333333333773FF73F33333333333CCCCC3333333333773F7F3333333333333
+      CCC333333333333777FF33333333333333CC3333333333333773}
+    NumGlyphs = 2
+  end
+  object cmdDelRejim: TBitBtn
+    Left = 16
+    Top = 216
+    Width = 89
+    Height = 25
+    Caption = #1581'&'#1584#1601
+    TabOrder = 23
+    OnClick = cmdDelRejimClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      3333333333333333333333333333333333333333333FF3333333333333003333
+      3333333333773FF3333333333309003333333333337F773FF333333333099900
+      33333FFFFF7F33773FF30000000999990033777777733333773F099999999999
+      99007FFFFFFF33333F7700000009999900337777777F333F7733333333099900
+      33333333337F3F77333333333309003333333333337F77333333333333003333
+      3333333333773333333333333333333333333333333333333333333333333333
+      3333333333333333333333333333333333333333333333333333}
+    NumGlyphs = 2
+  end
+  object cmdAddRejim: TBitBtn
+    Left = 104
+    Top = 216
+    Width = 89
+    Height = 25
+    Caption = #1575#1601'&'#1586#1608#1583#1606
+    TabOrder = 22
+    OnClick = cmdAddRejimClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      3333333333333FF3333333333333003333333333333F77F33333333333009033
+      333333333F7737F333333333009990333333333F773337FFFFFF330099999000
+      00003F773333377777770099999999999990773FF33333FFFFF7330099999000
+      000033773FF33777777733330099903333333333773FF7F33333333333009033
+      33333333337737F3333333333333003333333333333377333333333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      3333333333333333333333333333333333333333333333333333}
+    Layout = blGlyphRight
+    NumGlyphs = 2
+  end
+  object txtAmar1: TEdit
+    Left = 392
+    Top = 16
+    Width = 41
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 4
+    ParentBiDiMode = False
+    TabOrder = 1
+    OnKeyPress = txtAmar1KeyPress
+  end
+  object txtAmar2: TEdit
+    Left = 392
+    Top = 40
+    Width = 41
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 4
+    ParentBiDiMode = False
+    TabOrder = 3
+    OnKeyPress = txtAmar2KeyPress
+  end
+  object txtAmar3: TEdit
+    Left = 392
+    Top = 63
+    Width = 41
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 4
+    ParentBiDiMode = False
+    TabOrder = 5
+    OnKeyPress = txtAmar3KeyPress
+  end
+  object txtAmar4: TEdit
+    Left = 392
+    Top = 88
+    Width = 41
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 4
+    ParentBiDiMode = False
+    TabOrder = 7
+    OnKeyPress = txtAmar4KeyPress
+  end
+  object txtAmar5: TEdit
+    Left = 392
+    Top = 112
+    Width = 41
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 4
+    ParentBiDiMode = False
+    TabOrder = 9
+    OnKeyPress = txtAmar5KeyPress
+  end
+  object txtAmar6: TEdit
+    Left = 392
+    Top = 136
+    Width = 41
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 4
+    ParentBiDiMode = False
+    TabOrder = 11
+    OnKeyPress = txtAmar6KeyPress
+  end
+  object txtAmar7: TEdit
+    Left = 392
+    Top = 160
+    Width = 41
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 4
+    ParentBiDiMode = False
+    TabOrder = 13
+    OnKeyPress = txtAmar7KeyPress
+  end
+  object txtAmar8: TEdit
+    Left = 392
+    Top = 184
+    Width = 41
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 4
+    ParentBiDiMode = False
+    TabOrder = 15
+    OnKeyPress = txtAmar8KeyPress
+  end
+end

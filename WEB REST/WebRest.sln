@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRest", "WebRest\WebRest.csproj", "{779B6398-E063-4FFB-AFB0-2D2B1F108466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{FD25D823-5D95-48F4-8C15-27E45992CB4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{BE28D708-BB15-4617-AEAB-66E35CFF364A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{CAE1D027-81A3-4CF5-B025-035E0C42B4FD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.10.53:8080/tfs/gtscollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Business\\Business.csproj
+		SccProjectName1 = Business
+		SccLocalPath1 = Business
+		SccProjectUniqueName2 = DAL\\DAL.csproj
+		SccProjectName2 = DAL
+		SccLocalPath2 = DAL
+		SccProjectUniqueName3 = Model\\Model.csproj
+		SccProjectName3 = Model
+		SccLocalPath3 = Model
+		SccProjectUniqueName4 = WebRest\\WebRest.csproj
+		SccProjectName4 = WebRest
+		SccLocalPath4 = WebRest
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{779B6398-E063-4FFB-AFB0-2D2B1F108466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{779B6398-E063-4FFB-AFB0-2D2B1F108466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{779B6398-E063-4FFB-AFB0-2D2B1F108466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{779B6398-E063-4FFB-AFB0-2D2B1F108466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD25D823-5D95-48F4-8C15-27E45992CB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD25D823-5D95-48F4-8C15-27E45992CB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD25D823-5D95-48F4-8C15-27E45992CB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD25D823-5D95-48F4-8C15-27E45992CB4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE28D708-BB15-4617-AEAB-66E35CFF364A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE28D708-BB15-4617-AEAB-66E35CFF364A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE28D708-BB15-4617-AEAB-66E35CFF364A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE28D708-BB15-4617-AEAB-66E35CFF364A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE1D027-81A3-4CF5-B025-035E0C42B4FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE1D027-81A3-4CF5-B025-035E0C42B4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE1D027-81A3-4CF5-B025-035E0C42B4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE1D027-81A3-4CF5-B025-035E0C42B4FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

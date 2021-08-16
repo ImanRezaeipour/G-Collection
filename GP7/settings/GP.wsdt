@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>GP/Release_FLASH</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>187</Column0><Column1>28</Column1><Column2>22</Column2><Column3>1242260</Column3></ColumnWidths>
+      <PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Workspace>
+      <Build>
+        
+        
+        
+        
+      <PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>409</ColumnWidth1><ColumnWidth2>193</ColumnWidth2><ColumnWidth3>48</ColumnWidth3></Build>
+    <Find-in-Files><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ColumnWidth0>395</ColumnWidth0><ColumnWidth1>56</ColumnWidth1><ColumnWidth2>678</ColumnWidth2></Find-in-Files><TerminalIO/><Disassembly><PreferedWindows><Position>4</Position><ScreenPosX>556</ScreenPosX><ScreenPosY>760</ScreenPosY><Windows/></PreferedWindows><MixedMode>1</MixedMode><CodeCovShow>0</CodeCovShow><InstrProfShow>0</InstrProfShow></Disassembly><Debug-Log><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1089</ColumnWidth1></Debug-Log><Breakpoints><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Breakpoints><SourceBrowser><PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Workspace</Factory></Window></Windows></PreferedWindows></SourceBrowser></Static>
+    <Windows>
+      
+      
+    <Wnd1><Tabs><Tab><Identity>TabID-4637-10747</Identity><TabName>Workspace</TabName><Factory>Workspace</Factory><Session><NodeDict><ExpandedNode>GP</ExpandedNode><ExpandedNode>GP/Application</ExpandedNode><ExpandedNode>GP/Classes &amp; Headers</ExpandedNode><ExpandedNode>GP/Data</ExpandedNode><ExpandedNode>GP/Lib</ExpandedNode><ExpandedNode>GP/Output</ExpandedNode></NodeDict></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>E:\Ghadir_Win_Prg\hardware\GP\Application\Main.cpp</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>275</SelStart><SelEnd>275</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\Ghadir_Win_Prg\hardware\GP\Classes\Communication.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\Ghadir_Win_Prg\hardware\GP\Classes\Communication.cpp</Filename><XPos>3</XPos><YPos>1364</YPos><SelStart>48709</SelStart><SelEnd>48727</SelEnd></Tab><ActiveTab>2</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>E:\Ghadir_Win_Prg\hardware\GP\Classes\COMMUNICATIONPACKET.H</Filename><XPos>0</XPos><YPos>21</YPos><SelStart>828</SelStart><SelEnd>845</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\Ghadir_Win_Prg\hardware\GP\Classes\Personal.cpp</Filename><XPos>0</XPos><YPos>2099</YPos><SelStart>49562</SelStart><SelEnd>49562</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\Ghadir_Win_Prg\hardware\GP\Classes\PERSONAL.H</Filename><XPos>0</XPos><YPos>126</YPos><SelStart>2535</SelStart><SelEnd>2535</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00b2a308><key>iaridepm.enu1</key></Toolbar-00b2a308></Sizes></Row0></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>648</Bottom><Right>274</Right><x>-2</x><y>-2</y><xscreen>1</xscreen><yscreen>12</yscreen><sizeHorzCX>977</sizeHorzCX><sizeHorzCY>17341</sizeHorzCY><sizeVertCX>269531</sizeVertCX><sizeVertCY>939306</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes/></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

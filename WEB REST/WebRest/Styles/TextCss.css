@@ -1,0 +1,27 @@
+﻿@font-face {
+font-family: 'BYekan';
+src: url('/Fonts/BYekan.eot'); /* IE9 Compat Modes */
+src: url('/Fonts/BYekan.eot?#') format('eot'), /* IE6–8 */
+url('/Fonts/BYekan.ttf') format('truetype'), /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+url('/Fonts/BYekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+url('/Fonts/BYekan.otf') format('opentype'),
+url('/Fonts/BYekan.svg') format('svg');
+font-variant: normal;
+font-weight: normal;
+font-style: normal;
+}
+
+
+.LabelBoldSmall
+{
+    /* padding: 0 2px 2px;*/
+    color: #000000;
+    font-size: 10pt; /*line-height: 36px;*/
+    font-weight: normal;
+    font-family: "BYekan";
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.labeltest
+{
+    font-size: 20pt;
+}

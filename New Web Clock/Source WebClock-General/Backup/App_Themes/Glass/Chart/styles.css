@@ -1,0 +1,21 @@
+/* -- WebChartControl -- */
+.dxchartsuiLoadingDiv_Glass
+{
+	background-color:Gray;	
+	opacity: 0.01;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=1);
+}
+.dxchartsuiLoadingPanel_Glass
+{
+	font: 9pt Tahoma;
+	color: #303030;
+	border: solid 1px #7EACB1;
+	background-color: White;
+}
+.dxchartsuiLoadingPanel_Glass td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px 12px 12px;
+}
+

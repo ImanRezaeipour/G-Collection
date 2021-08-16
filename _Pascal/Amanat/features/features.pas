@@ -1,0 +1,3 @@
+{$DEFINE TreeParts}
+{$DEFINE Network}
+

@@ -1,0 +1,137 @@
+#ifndef		__NETWORK__
+#define		__NETWORK__
+
+#include	"DATATYPE.H"
+#include	"IP.H"
+#include	"IP_WEBSERVER.H"
+#include	"RTOS.h"
+#include	"BSP.h"
+#include	"DEVICE.H"
+#include 	"COMMUNICATIONPACKET.H"
+
+
+class Network : public  Device
+{
+public:
+	Network();
+	~Network();
+	
+	void ClearSendBuffer();
+	void ClearReceiveBuffer();
+	void ClearBuffers();
+
+	void Send (BYTE B);
+	void Send (string S);
+	void Send (BYTE* Data, int Length);
+	void Send (Buffer* P);
+	
+	CommunicationPacket GetReceivedData (void);
+	int GetReceivedDataLength (void);
+	
+	void SetServerAddress (DWORD IP, DWORD Port);
+	void SetLocalAddress (DWORD IP, DWORD Port, DWORD Mask); 	
+        void SetLocalGateway (DWORD  IP);
+
+	bool HardwareIsReady (void);
+	static bool CableIsConnect (void);
+
+	ConnectionStatus GetConnectionStatus (void);	
+
+	void Disconnect (void);
+	void Connect (void);
+	
+	void SetNetworkResourceFailureEvent (EventPointer EP);
+	void SetRemoveCableEvent (EventPointer EP);
+	void SetConnectCableEvent (EventPointer EP);
+	void SetDisconnectEvent(EventPointer EP);
+	void SetConnectSuccessEvent (EventPointer EP);
+	void SetConnectFailEvent (EventPointer EP);
+	void SetAcceptSuccessEvent (EventPointer EP);
+	void SetAcceptFailEvent (EventPointer EP);
+	void SetReceiveSuccessEvent (EventPointer EP);
+	void SetReceiveFailEvent (EventPointer EP);
+	void SetSendSuccessEvent (EventPointer EP);
+	void SetSendFailEvent (EventPointer EP);
+	
+	void SetValidCOMMPacketReceivedEvent (EventPointer EP);
+	void SetInvalidCOMMPacketReceivedEvent (EventPointer EP);
+
+	void DisableEvents (void);
+
+private:
+	void initial_hardware (void);
+	void initial_critical_resources (void);	
+	void initial_statuses (void);	
+	void initial_members (void);
+	void final_initialization (void);	
+	void set_enable_flag (bool flag);
+	
+	void disable_interrupts (void);  	
+	void enable_interrupts (void);	
+	
+	void create_critical_tasks (void);	
+	void create_nonecritical_tasks (void);	
+	void create_timers (void);
+	
+	void suspend_nonecritical_tasks (void);
+	void resume_nonecritical_tasks (void); 		
+	
+	void start_timers (void);
+	void stop_timers (void);
+	
+	static void disconnect_detection (void);
+
+	void internal_send (void);	
+	
+	static CommunicationPacket send_packet;
+	static CommunicationPacket receive_packet;
+	
+	static OS_STACKPTR int stack_ip[256];
+	static OS_STACKPTR int stack_rx[128];
+	static OS_STACKPTR int stack_common[128];
+	static OS_STACKPTR int stack_connect[128];
+	static OS_STACKPTR int stack_accept[256];
+	static OS_STACKPTR int stack_send[128];
+	static OS_STACKPTR int stack_receive[512];
+	
+	static OS_TASK tcb_ip;
+	static OS_TASK tcb_rx;
+	static OS_TASK tcb_common;
+	static OS_TASK tcb_connect;
+	static OS_TASK tcb_accept;
+	static OS_TASK tcb_send;
+	static OS_TASK tcb_receive;
+
+	static void task_common (void);
+	static void task_connect (void);
+	static void task_accept(void);
+	static void task_send (void);
+	static void task_receive (void);
+	
+	static DWORD server_ip;
+	static DWORD server_port;
+	static DWORD local_port;
+
+	static long socket;
+	static ConnectionStatus connection_status;
+
+	static EventPointer ep_network_resource_failure;
+	static EventPointer ep_remove_cable;
+	static EventPointer ep_connect_cable;
+	static EventPointer ep_disconnect;
+	static EventPointer ep_connect_success;
+	static EventPointer ep_connect_fail;
+	static EventPointer ep_accept_success;
+	static EventPointer ep_accept_fail;
+	static EventPointer ep_send_success;	
+	static EventPointer ep_send_fail;		
+	static EventPointer ep_receive_success;
+	static EventPointer ep_receive_fail;
+	
+	static EventPointer ep_valid_comm_packet_received;
+	static EventPointer ep_invalid_comm_packet_received;	
+	
+	static bool enable;
+};
+
+#endif

@@ -1,0 +1,123 @@
+object frmSearchCard: TfrmSearchCard
+  Left = 121
+  Top = 108
+  BiDiMode = bdRightToLeft
+  BorderStyle = bsDialog
+  Caption = 'Ã” ÃÊÌ ﬂ«— Â« /ﬂœÂ«'
+  ClientHeight = 77
+  ClientWidth = 318
+  Color = clBtnFace
+  Font.Charset = ARABIC_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Arabic Transparent'
+  Font.Style = []
+  OldCreateOrder = True
+  ParentBiDiMode = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 15
+  object lblState: TLabel
+    Left = 276
+    Top = 49
+    Width = 37
+    Height = 15
+    Caption = '&Ê÷⁄Ì '
+    FocusControl = cmbState
+  end
+  object lblToCode: TLabel
+    Left = 180
+    Top = 7
+    Width = 23
+    Height = 15
+    Caption = '& « ﬂœ'
+    FocusControl = txtToCode
+  end
+  object lblFromCode: TLabel
+    Left = 278
+    Top = 7
+    Width = 31
+    Height = 15
+    Caption = '«&“ ﬂœ'
+    FocusControl = txtFromCode
+  end
+  object cmbState: TComboBox
+    Left = 191
+    Top = 49
+    Width = 85
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 2
+    OnKeyPress = cmbStateKeyPress
+  end
+  object txtToCode: TEdit
+    Left = 106
+    Top = 7
+    Width = 71
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 8
+    ParentBiDiMode = False
+    TabOrder = 1
+    OnKeyPress = txtToCodeKeyPress
+  end
+  object txtFromCode: TEdit
+    Left = 212
+    Top = 7
+    Width = 71
+    Height = 23
+    BiDiMode = bdLeftToRight
+    MaxLength = 8
+    ParentBiDiMode = False
+    TabOrder = 0
+    OnKeyPress = txtFromCodeKeyPress
+  end
+  object cmdCancel: TBitBtn
+    Left = 7
+    Top = 49
+    Width = 86
+    Height = 22
+    Cancel = True
+    Caption = '&«‰’—«›'
+    ModalResult = 2
+    TabOrder = 4
+    Glyph.Data = {
+      DE010000424DDE01000000000000760000002800000024000000120000000100
+      0400000000006801000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      333333333333333333333333000033338833333333333333333F333333333333
+      0000333911833333983333333388F333333F3333000033391118333911833333
+      38F38F333F88F33300003339111183911118333338F338F3F8338F3300003333
+      911118111118333338F3338F833338F3000033333911111111833333338F3338
+      3333F8330000333333911111183333333338F333333F83330000333333311111
+      8333333333338F3333383333000033333339111183333333333338F333833333
+      00003333339111118333333333333833338F3333000033333911181118333333
+      33338333338F333300003333911183911183333333383338F338F33300003333
+      9118333911183333338F33838F338F33000033333913333391113333338FF833
+      38F338F300003333333333333919333333388333338FFF830000333333333333
+      3333333333333333333888330000333333333333333333333333333333333333
+      0000}
+    NumGlyphs = 2
+  end
+  object cmdSearch: TBitBtn
+    Left = 7
+    Top = 7
+    Width = 86
+    Height = 22
+    Caption = 'Ã&” ÃÊ'
+    ModalResult = 1
+    TabOrder = 3
+    OnClick = cmdSearchClick
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      0400000000008000000000000000000000001000000000000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00888888888888
+      8888888888888888888800000888880000080F000888880F00080F000888880F
+      0008000000080000000800F000000F00000800F000800F00000800F000800F00
+      00088000000000000088880F00080F0008888800000800000888888000888000
+      88888880F08880F0888888800088800088888888888888888888}
+  end
+end

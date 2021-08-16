@@ -1,0 +1,301 @@
+.bodyStyle
+{
+    margin: 0px 0px 0px 0px;
+    font-family: tahoma;
+    font-size: 8px;
+    background-color: #F0F8FF;
+}
+.bannertextformat
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+.textformat
+{
+    font-family: tahoma;
+    font-size: 9pt;
+    color: #859CBF;
+}
+.bannertoptext
+{
+    position: absolute;
+    top: 0px;
+    width: 207px;
+    color: #000;
+    z-index: 1;
+}
+.bannerbuttontext
+{
+    position: absolute;
+    bottom: 0px;
+    width: 207px;
+    color: #000;
+    z-index: 1;
+}
+.bannerstyle
+{
+    z-index: 0;
+    width: 1018px;
+    height: 94px;
+}
+.bannerDiv
+{
+    height: 94px;
+    position: relative;
+    background-image: url('../img/JPG10F8.tmp.jpg');
+}
+
+.IWREGION1CSS
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1100;
+    width: 100%;
+    height: 94px;
+   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+}
+.IMGBANNERCSS
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    height: 94px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+}
+.LBLLICCSS
+{
+    position: absolute;
+    left: 90px;
+    top: 72px;
+    z-index: 100;
+    width: 854px;
+    height: 17px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'tahoma';
+    text-decoration: none;
+    color: #000000;
+}
+.LBPRODUCENAMECSS
+{
+    position: absolute;
+    right: 50px;
+    top: 2px;
+    z-index: 100;
+    width: 100%;
+    direction:rtl;
+    height: 17px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'Tahoma';
+    text-decoration: none;
+    color: #000000;
+}
+.RGNHEADERCSS
+{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    width: 97%;
+    height: 79px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0px;
+    background-color: #191970;
+    border-style: solid;   
+    border:1px;
+}
+.LBPRODUCTNAMECSS
+{
+    position:absolute;
+    right: 30px;
+    top: 19px;
+    direction:rtl;
+    z-index: 100;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'tahoma';
+    text-decoration: none;
+    text-align: right;
+    color: #FFFFFF;
+}
+.LBNAMECSS
+{
+    position: absolute;
+    left: 18px;
+    top: 61px;
+    z-index: 100;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'tahoma';
+    text-decoration: none;
+    color: #A6CAF0;
+    text-align: left;
+}
+.LBLLICCSS2
+{
+    position: absolute;
+    left: 18px;
+    top: 50px;
+    direction:ltr;
+    width:100%;
+    z-index: 100;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'tahoma';
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: left;
+}
+.IWLABEL2CSS
+{
+    position: absolute;
+    left: 863px;
+    top: 45px;
+    z-index: 100;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'tahoma';
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: left;
+}
+.IWLABEL3CSS
+{
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    z-index: 100;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'tahoma';
+    text-decoration: none;
+    color: #A6CAF0;
+    text-align: left;
+}
+.LoginStatus
+{
+   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'tahoma';
+    text-decoration: none;
+    color: #A6CAF0;
+    text-align: left;
+}
+.RGNBODYCSS
+{
+    position: absolute;
+    z-index: 1100;
+    clip: rect(0px,1020px,545px,0px);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+}
+.IWLABEL5CSS
+{
+    position: absolute;
+    left: 538px;
+    top: 338px;
+    z-index: 100;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+    color: #859CBF;
+    text-align: left;
+}
+.IWLABEL7CSS
+{
+    z-index: 100;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'Tahoma';
+    text-decoration: none;
+    color: #859CBF;
+    text-align: right;
+}
+.RGNTIMEATTENDENTCSS
+{
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 545px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0px 10px 50px 0px;    
+    background-color: #F5FFFA;
+    border-style: solid;
+    border-width: 0;
+    overflow: auto;
+}
+.linkMainPage
+{
+    height:50px;
+    padding-right:10px;    
+    direction:rtl;
+}
+
+.bottonLogout
+{
+    vertical-align:bottom;
+    padding-right:50px;
+}
+
+.loginWidthStyle
+{
+    height:400px;
+    vertical-align:middle;
+    
+    padding-right:50px;
+    }
+    
+.mainpageLinkStyle
+{
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 16px; 
+    font-family: 'tahoma';
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+    }    
+.CHANGEPASSWORDTABLE
+{
+    left: 0px;
+    top: 50px;
+    z-index: 10;    
+    width: 50%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: #F5FFFA;
+    border-style: solid;
+    border-width: 0; 
+}    

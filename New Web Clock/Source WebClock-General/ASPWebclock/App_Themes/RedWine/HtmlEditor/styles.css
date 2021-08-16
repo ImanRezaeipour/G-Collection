@@ -1,0 +1,216 @@
+/* ----------------- Main ----------------- */
+/* Loading panel */
+.dxheLoadingDiv_RedWine
+{
+    background: white;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    cursor: wait;
+}
+.dxheLoadingPanel_RedWine
+{
+	font: 9pt Tahoma;
+	color: #767676;
+}
+.dxheLoadingPanel_RedWine td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px;
+}
+
+.dxheControl_RedWine
+{
+    border: Solid 1px #8A0A37;
+}
+
+/* Area */
+.dxheErrorFrame_RedWine
+{
+    font-size: 9pt;
+    font-family: Tahoma, Verdana, Arial;
+    color: #D00707;
+    background-color: #FBC7C7;
+    border-bottom: solid 1px #DEC0C0;
+}
+.dxheErrorFrame_RedWine .dxhe {
+    padding: 5px;
+}
+.dxheErrorFrame_RedWine .dxhe td {
+    padding: 0px;
+}
+.dxheErrorFrame_RedWine .dxheErrorFrameCloseButton_RedWine {
+    cursor: pointer;
+}
+.dxheContentArea_RedWine
+{
+    padding: 4px;
+    background-color: #B55476;
+}
+.dxheViewArea_RedWine
+{
+    border: Solid 1px #A74768;    
+}
+.dxheHtmlViewEdit_RedWine,
+.dxheDesignViewArea_RedWine,
+.dxhePreviewArea_RedWine 
+{
+    margin: 0px;
+    background-color: #FFFFFF;
+    background-image: none;
+    font-size: smaller;
+    font: normal 12px Arial;
+}
+td.dxheHtmlViewEdit_RedWine, body.dxheDesignViewArea_RedWine, body.dxhePreviewArea_RedWine
+{
+    padding: 0 0 0 4px;
+}
+.dxheControl_RedWine.dxhe-rtl td.dxheHtmlViewEdit_RedWine, 
+.dxheControl_RedWine.dxhe-rtl .dxeMemo_RedWine td,
+body.dxheDesignViewArea_RedWine.dxhe-rtl, 
+body.dxhePreviewArea_RedWine.dxhe-rtl
+{
+    padding: 0 4px 0 0;
+}
+.dxheControl_RedWine .dxeMemo_RedWine textarea 
+{
+	resize:none;
+}
+/* Element appearance in DesignView */
+body.dxheDesignViewArea_RedWine table.dxEmptyBorderTable,
+body.dxheDesignViewArea_RedWine table.dxEmptyBorderTable td  {
+    border:1px dotted gray;
+}
+@media print 
+{
+	body.dxheDesignViewArea_RedWine table.dxEmptyBorderTable,
+	body.dxheDesignViewArea_RedWine table.dxEmptyBorderTable td  {
+		border:0px;
+	}
+}
+/* Status Bar */
+.dxheStatusBar_RedWine 
+{
+}
+.dxheStatusBarTab_RedWine 
+{    
+}
+.dxheStatusBar_RedWine .dxheStatusBarActiveTab_RedWine 
+{
+    background-color: White;
+}
+.dxHtmlEditor_heSizeGrip_RedWine 
+{
+    cursor: se-resize;
+}
+.dxHtmlEditor_heSizeGripRtl_RedWine 
+{
+    cursor: ne-resize;
+}
+.dxheSizeGripContainer_RedWine 
+{
+    float: left;
+    height: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 0;
+    margin-top: -16px;
+}
+.dxheControl_RedWine.dxhe-rtl .dxheSizeGripContainer_RedWine 
+{
+	text-align: left;
+}
+/* ----------------- Dialog Forms ----------------- */
+#dxInsertTableForm .buttonsCell,
+#dxInsertLinkForm .buttonsCell,
+#dxInsertImageForm .buttonsCell,
+#dxPasteFromWordForm .buttonsCell,
+#dxTableColumnPropertiesForm .buttonsCell,
+.dxheCustomDialog_RedWine .dxhecd-Buttons
+{
+	background-color: #EED8E3;
+	border-top: 1px #CB9FB4 solid;
+    padding: 11px;
+}
+#dxInsertImageForm .imagePreviewCell
+{
+    color: #878787;
+    border: dashed 1px #cac8c8;
+}
+#dxPasteFromWordForm .pasteContainerCell td
+{
+	border: Solid 1px #BC758E;
+}
+/*----------------- Toolbars -----------------*/
+.dxtbSpacing_RedWine
+{
+	height: 1px;
+}
+.dxtbControl_RedWine 
+{
+	font: 9pt Tahoma;
+	color: black;
+	background-color: #A42652;
+    border-bottom: Solid 1px #8A0A37;
+}
+
+.dxtbControl_RedWine td.dxmtb.dxmMenu_RedWine
+{
+	border-width: 0px;
+}
+.dxtbComboBoxMenuItem_RedWine
+{
+    padding: 2px 0px;
+    padding-right: 1px;
+}
+
+/* Toolbars Lightweight Mode */
+.dxtbControl_RedWine .dxmLite_RedWine .dxm-main.dxmtb {
+    border-width: 0px;
+}
+.dxheControl_RedWine .dxtbControl_RedWine .dxmLite_RedWine .dxm-horizontal.dxmtb .dxm-image-l .dxm-dropDownMode .dxm-popOut,
+.dxheControl_RedWine .dxtbControl_RedWine .dxmLite_RedWine .dxm-horizontal.dxmtb .dxm-image-l .dxm-popOut {
+    padding: 8px 5px 8px 5px;
+}
+.dxmLite_RedWine .dxm-horizontal.dxmtb .dxtb-comboBoxMenuItem {
+    border-width: 0px;
+    padding: 2px 0px;
+    padding-right: 1px;
+}
+.dxmLite_RedWine .dxm-horizontal.dxmtb .dxm-image-r .dxtb-comboBoxMenuItem 
+{
+	padding-left: 1px;
+}
+.dxtbControl_RedWine .dxmLite_RedWine .dxm-horizontal.dxmtb .dxm-image-l .dxm-dropDownMode.dxtb-cb .dxm-content, 
+.dxtbControl_RedWine .dxmLite_RedWine .dxm-horizontal.dxmtb .dxm-image-r .dxm-dropDownMode.dxtb-cb .dxm-content
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.dxtbControl_RedWine .dxmLite_RedWine .dxm-horizontal.dxmtb .dxm-image-l .dxm-item.dxtb-cddi .dxm-content, 
+.dxtbControl_RedWine .dxmLite_RedWine .dxm-horizontal.dxmtb .dxm-image-r .dxm-item.dxtb-cddi .dxm-content
+{
+	padding-top: 4px;
+	padding-bottom: 3px;
+}
+.dxmLite_RedWine .dxhetipControl_RedWine img
+{
+	vertical-align: top;
+}
+
+/* ToolbarColorButton */
+.dxtcbControl_RedWine { }
+.dxtcbColorDiv_RedWine
+{
+	width: 16px;
+	height: 4px;
+	font-size:0pt;
+	background-color: Red;
+}
+
+/*----------------- RoundPanel -----------------*/
+.dxheRP.dxrpControl_RedWine .dxrpcontent
+{
+    padding: 9px 8px;
+}
+

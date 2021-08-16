@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMasterPage.master.cs"
+    Inherits="WebRest.MainMasterPage" %>
+
+<%@ Register Assembly="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxPanel" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxRoundPanel" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.ASPxEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxHeadline" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxNavBar" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxTabControl" TagPrefix="dx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    
+    <title>Web Rest</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="masterPageForm" runat="server" enableviewstate="False">
+    
+    <dx:Aspxsplitter id="ASPxSplitterMainMasterPage" orientation="Vertical" runat="server"
+        width="100%" separatorsize="10px" fullscreenmode="True" righttoleft="True" showcollapsebackwardbutton="True">
+        <panes>
+      
+           <dx:SplitterPane Name="spilitterHeader" MaxSize="120px">
+           <ContentCollection>
+           <dx:SplitterContentControl runat="server" ID="SplitterContentControlHeader">
+           <asp:Image ID="Image1" runat="server" BorderColor="#660033" BorderStyle="Solid" BorderWidth="2px"
+                            Height="100px" ImageUrl="~/Image/DesignImage/Header.jpg" 
+                   Width="100%" />
+           </dx:SplitterContentControl>
+           </ContentCollection>
+           </dx:SplitterPane>
+             <dx:SplitterPane Name="spilitterMain" >
+           <ContentCollection>
+           <dx:SplitterContentControl runat="server" ID="SplitterContentControl2" >
+               <dx:ASPxSplitter ID="ASPxSplitter2" runat="server" BackColor="#6698FF" 
+                            Height="100%" ResizingMode="Postponed" RightToLeft="True" SeparatorSize="10px" ShowCollapseBackwardButton="True"
+                            Style="margin-bottom: 50px" Width="100%">
+                   <Panes>
+                       <dx:SplitterPane MaxSize="260px" MinSize="10px" ShowSeparatorImage="True">
+<PaneStyle HorizontalAlign="Center"></PaneStyle>
+ <Separators Size="10px">
+ <SeparatorStyle BackColor="#CC00CC" />
+                                    </Separators>
+
+                       <ContentCollection>
+                       <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+                                  <table>
+                                                <tr>
+                                                    <td >
+                                                    <table>
+                                                    <tr>
+                                                    <td>
+                                                    <asp:ImageButton ID="ImageButtonLogOut" runat="server" 
+                                                            BorderColor="#660033" BorderStyle="Solid" BorderWidth="2px" 
+                                                            OnClick="ImageButtonLogOut_Click" 
+                                                            ImageUrl="~/Image/DesignImage/signOut.png" AlternateText="خروج" 
+                                                            ToolTip="خروج" />
+                                                    </td>
+                                                    </tr>
+                                                    </table>
+                                                            
+                                                            
+                                                        
+                                                    </td>
+                                                    
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <asp:ContentPlaceHolder ID="NavbarContent" runat="server" Visible="True">
+                                                        </asp:ContentPlaceHolder>
+                                                       
+                                                    </td>
+                                                  
+
+                                                </tr>
+                                            </table>
+                                            
+                                  <dx:ASPxRoundPanel ID="ASPxRoundPanelUserInformation" runat="server" 
+                                      CssFilePath="~/App_Themes/Office2003Blue/{0}/styles.css" CssPostfix="Office2003Blue" 
+                                      GroupBoxCaptionOffsetY="-25px" HeaderText="مشخصات کاربر" RightToLeft="True" 
+                                      SpriteCssFilePath="~/App_Themes/Office2003Blue/{0}/sprite.css" Width="98%" 
+                                      EnableDefaultAppearance="False">
+                                      <ContentPaddings Padding="14px" />
+<ContentPaddings Padding="2px" paddingbottom="10px" paddingtop="10px"></ContentPaddings>
+
+                                      <HeaderStyle >
+                                      <paddings padding="0px" paddingbottom="7px" paddingleft="2px" 
+                                          paddingright="2px" />
+                                      </HeaderStyle>
+                                      <PanelCollection>
+                                          <dx:PanelContent ID="PanelContent1" runat="server" SupportsDisabledAttribute="True">
+                                              <table style="font-family: tahoma; font-size: 8pt;" width="100%">
+                                                  <tr>
+                                                      <td align="right">
+                                                          <asp:Label ID="lblBarcode" runat="server"></asp:Label>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td align="right">
+                                                          <asp:Label ID="lblName" runat="server"></asp:Label>
+                                                      </td>
+                                                  </tr>
+                                              </table>
+                                          </dx:PanelContent>
+                                      </PanelCollection>
+                                  </dx:ASPxRoundPanel>
+                                            
+                       </dx:SplitterContentControl>
+                       </ContentCollection>
+                       </dx:SplitterPane>
+                       <dx:SplitterPane ScrollBars="Both">
+                        <Separators Size="10px" Visible="False">
+                                    </Separators>
+                       <ContentCollection>
+                       <dx:SplitterContentControl ID="SplitterContentControlContentPage" runat="server">
+                            <asp:ContentPlaceHolder ID="PageControlContent" runat="server" Visible="true">
+                                            </asp:ContentPlaceHolder>
+                       </dx:SplitterContentControl>
+                       </ContentCollection>
+                       </dx:SplitterPane>
+                   </Panes>
+                    <Styles>
+                                <Separator BackColor="#CCFFCC">
+                                    <Border BorderColor="#CC0099" BorderStyle="Groove" />
+                                    <BorderBottom BorderStyle="Outset" />
+                                    <Border BorderColor="#CC0099" BorderStyle="Groove"></Border>
+                                    <BorderBottom BorderStyle="Outset"></BorderBottom>
+                                </Separator>
+                                <SeparatorButton>
+                                    <Border BorderStyle="Solid" BorderWidth="2px" />
+                                    <Border BorderStyle="Solid" BorderWidth="2px"></Border>
+                                </SeparatorButton>
+                            </Styles>
+               </dx:ASPxSplitter>
+           </dx:SplitterContentControl>
+           </ContentCollection>
+           </dx:SplitterPane>
+         
+        </panes>
+        <styles>
+            <Separator BackColor="#CCFFCC">
+            </Separator>
+            <SeparatorButton>
+                <Border BorderWidth="2px" />
+                <Border BorderWidth="2px"></Border>
+            </SeparatorButton>
+        </styles>
+    </dx:aspxsplitter>
+    </form>
+</body>
+</html>

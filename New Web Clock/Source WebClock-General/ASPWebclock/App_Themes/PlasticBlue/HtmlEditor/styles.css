@@ -1,0 +1,223 @@
+/* ----------------- Main ----------------- */
+/* Loading panel */
+.dxheLoadingDiv_PlasticBlue
+{
+    background: white;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    cursor: wait;
+}
+.dxheLoadingPanel_PlasticBlue
+{
+	font: 9pt Tahoma, Verdana, Arial;
+	color: #303030;
+}
+.dxheLoadingPanel_PlasticBlue td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px 12px 12px;
+}
+
+.dxheControl_PlasticBlue
+{
+    border: Solid 1px #2C4182;
+}
+
+/* Area */
+.dxheErrorFrame_PlasticBlue
+{
+    font-size: 9pt;
+    font-family: Tahoma, Verdana, Arial;
+    color: #D00707;
+    background-color: #FBC7C7;
+    border-bottom: solid 1px #DEC0C0;
+}
+.dxheErrorFrame_PlasticBlue .dxhe {
+    padding: 5px;
+}
+.dxheErrorFrame_PlasticBlue .dxhe td {
+    padding: 0px;
+}
+.dxheErrorFrame_PlasticBlue .dxheErrorFrameCloseButton_PlasticBlue {
+    cursor: pointer;
+}
+.dxheContentArea_PlasticBlue
+{
+    padding: 4px;
+	padding-bottom: 6px;
+    background-color: #E5E7F0;
+}
+.dxheViewArea_PlasticBlue
+{
+    border: Solid 1px #CCCCCC;    
+}
+.dxheHtmlViewEdit_PlasticBlue,
+.dxheDesignViewArea_PlasticBlue,
+.dxhePreviewArea_PlasticBlue 
+{
+    margin: 0px;
+    background-color: #FFFFFF;
+    background-image: none;
+    font-size: smaller;
+    font: normal 12px Arial;
+}
+td.dxheHtmlViewEdit_PlasticBlue, body.dxheDesignViewArea_PlasticBlue, body.dxhePreviewArea_PlasticBlue
+{
+    padding: 0 0 0 4px;
+}
+.dxheControl_PlasticBlue.dxhe-rtl td.dxheHtmlViewEdit_PlasticBlue, 
+.dxheControl_PlasticBlue.dxhe-rtl .dxeMemo_PlasticBlue td,
+body.dxheDesignViewArea_PlasticBlue.dxhe-rtl, 
+body.dxhePreviewArea_PlasticBlue.dxhe-rtl
+{
+    padding: 0 4px 0 0;
+}
+.dxheControl_PlasticBlue .dxeMemo_PlasticBlue textarea 
+{
+	resize:none;
+}
+/* Element appearance in DesignView */
+body.dxheDesignViewArea_PlasticBlue table.dxEmptyBorderTable,
+body.dxheDesignViewArea_PlasticBlue table.dxEmptyBorderTable td  {
+    border:1px dotted gray;
+}
+@media print 
+{
+	body.dxheDesignViewArea_PlasticBlue table.dxEmptyBorderTable,
+	body.dxheDesignViewArea_PlasticBlue table.dxEmptyBorderTable td  {
+		border:0px;
+	}
+}
+/* Status Bar */
+.dxheStatusBar_PlasticBlue 
+{
+}
+.dxheStatusBarTab_PlasticBlue 
+{    
+}
+.dxheStatusBarActiveTab_PlasticBlue 
+{
+}
+.dxHtmlEditor_heSizeGrip_PlasticBlue 
+{
+    cursor: se-resize;
+}
+.dxHtmlEditor_heSizeGripRtl_PlasticBlue 
+{
+    cursor: ne-resize;
+}
+.dxheSizeGripContainer_PlasticBlue 
+{
+    float: left;
+    height: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 0;
+    margin-top:-16px;
+}
+.dxheControl_PlasticBlue.dxhe-rtl .dxheSizeGripContainer_PlasticBlue 
+{
+	text-align: left;
+}
+
+/* ----------------- Dialog Forms ----------------- */
+#dxInsertTableForm .buttonsCell,
+#dxInsertLinkForm .buttonsCell,
+#dxInsertImageForm .buttonsCell,
+#dxPasteFromWordForm .buttonsCell,
+#dxTableColumnPropertiesForm .buttonsCell,
+.dxheCustomDialog_PlasticBlue .dxhecd-Buttons
+{
+	font: 9pt Tahoma;
+	color: #909090;
+	background-color: #E9E9E9;
+	border-style: none;
+	border-top: solid 1px #E0E0E0;	
+	
+	background-image: url('dfFooterBack.gif');
+    background-repeat:no-repeat;
+	
+    padding: 11px;
+}
+#dxInsertImageForm .imagePreviewCell
+{
+    color: #878787;
+    border: dashed 1px #cac8c8;
+}
+#dxPasteFromWordForm .pasteContainerCell td
+{
+	border: Solid 1px #B8B8B8;
+}
+/*----------------- Toolbars -----------------*/
+.dxtbSpacing_PlasticBlue
+{
+	height: 1px;
+}
+.dxtbControl_PlasticBlue 
+{
+	font: 9pt Tahoma;
+	color: black;
+	background-color: #2C4182;
+    border-bottom: Solid 1px #2C4182;
+}
+
+.dxtbControl_PlasticBlue td.dxtb.dxmMenu_PlasticBlue
+{
+	border-style: none;
+}
+.dxtbComboBoxMenuItem_PlasticBlue
+{
+    padding: 3px 4px 2px 4px;
+}
+
+/* Toolbars Lightweight Mode */
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-main.dxmtb {
+    border-width: 0px;
+}
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-horizontal.dxmtb .dxm-image-l .dxm-dropDownMode .dxm-popOut,
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-horizontal.dxmtb .dxm-image-l .dxm-popOut {
+	padding: 9px 6px 10px 6px;
+}
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-horizontal.dxmtb .dxtb-comboBoxMenuItem {
+    border-width: 0px;
+    padding: 2px 4px 1px;
+}
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-horizontal.dxmtb .dxm-image-l .dxm-dropDownMode.dxtb-cb .dxm-content, 
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-horizontal.dxmtb .dxm-image-r .dxm-dropDownMode.dxtb-cb .dxm-content
+{
+	padding-top: 5px;
+	padding-bottom: 4px;
+}
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-horizontal.dxmtb .dxm-image-l .dxm-item.dxtb-cddi .dxm-content, 
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-horizontal.dxmtb .dxm-image-r .dxm-item.dxtb-cddi .dxm-content
+{
+	padding-top: 6px;
+	padding-bottom: 5px;
+}
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-horizontal.dxmtb .dxm-image-l .dxm-item.dxtb-cddi .dxm-content img, 
+.dxtbControl_PlasticBlue .dxmLite_PlasticBlue .dxm-horizontal.dxmtb .dxm-image-r .dxm-item.dxtb-cddi .dxm-content img
+{
+	margin-top: -1px;
+}
+.dxmLite_PlasticBlue .dxhetipControl_PlasticBlue img
+{
+	vertical-align: top;
+}
+
+/* ToolbarColorButton */
+.dxtcbControl_PlasticBlue { }
+.dxtcbColorDiv_PlasticBlue
+{
+	width: 16px;
+	height: 4px;
+	font-size:0pt;
+	background-color: Red;
+}
+
+/*----------------- RoundPanel -----------------*/
+.dxheRP.dxrpControl_PlasticBlue .dxrpcontent
+{
+    padding: 9px 8px;
+}
+

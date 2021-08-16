@@ -1,0 +1,6 @@
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\DAL\bin\Debug\DAL.dll.config
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\DAL\bin\Debug\DAL.dll
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\DAL\bin\Debug\DAL.pdb
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\DAL\obj\Debug\DAL.dll
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\DAL\obj\Debug\DAL.pdb
+D:\Ghadir\Team\Ghadir Projects\New Web Clock\Source WebClock-BankMarkazi\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

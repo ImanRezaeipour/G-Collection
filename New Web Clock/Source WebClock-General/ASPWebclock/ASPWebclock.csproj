@@ -1,0 +1,1710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{550B7A8C-37D3-44C0-8DDB-EF43DE387EF2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASPWebclock</RootNamespace>
+    <AssemblyName>ASPWebclock</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DeployIisAppPath>192.168.10.49Default Web Site/ASPWebclock_deploy</DeployIisAppPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Itanium'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <CodeAnalysisLogFile>bin\ASPWebclock.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Itanium'">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\ASPWebclock.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\ASPWebclock.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\ASPWebclock.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\ASPWebclock.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\ASPWebclock.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BasicFrame.WebControls.BasicDatePicker, Version=1.4.3.40829, Culture=neutral, PublicKeyToken=e1cce521aa9b4849, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependended dll\BasicFrame.WebControls.BasicDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentArt.Web.UI, Version=2009.3.1762.3, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Data.v11.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Printing.v11.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Utils.v11.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Web.ASPxEditors.v11.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Web.ASPxGridView.v11.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Web.v11.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraReports.v11.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.1.Web, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraReports.v11.1.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JQControls, Version=1.1.0.35436, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\JQControls.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Dependended dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Persia, Version=3.0.4052.38236, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependended dll\Persia.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2011.3.1200.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\\Stimulsoft.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2011.3.1200.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\\Stimulsoft.Report.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2011.3.1200.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\\Stimulsoft.Report.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminAccessReports.aspx" />
+    <Content Include="Admin\AdminAccessRoleNavbar.aspx" />
+    <Content Include="Admin\AdminChangePassword.aspx" />
+    <Content Include="Admin\AdminInfo.aspx" />
+    <Content Include="Admin\DefineAdminOperator.aspx" />
+    <Content Include="Admin\AdminMain.aspx" />
+    <Content Include="Admin\DefineDefultUser.aspx" />
+    <Content Include="Admin\DefineManagerPersonnel.aspx" />
+    <Content Include="Admin\DefinePersonnel.aspx" />
+    <Content Include="Admin\log.aspx" />
+    <Content Include="App_Themes\Aqua\Chart\Loading.gif" />
+    <Content Include="App_Themes\Aqua\Chart\styles.css" />
+    <Content Include="App_Themes\Aqua\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtButtonBackDis.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtButtonCheckedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtCalendarButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtCalendarButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtCalendarFooterBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtCalendarHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtDropDownBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtDropDownBackDis.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtProgressBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinDecButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinDecButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinIncButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\edtSpinIncButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Editors\lbHeaderBackground.gif" />
+    <Content Include="App_Themes\Aqua\Editors\Loading.gif" />
+    <Content Include="App_Themes\Aqua\Editors\sprite.css" />
+    <Content Include="App_Themes\Aqua\Editors\sprite.gif" />
+    <Content Include="App_Themes\Aqua\Editors\sprite.png" />
+    <Content Include="App_Themes\Aqua\Editors\styles.css" />
+    <Content Include="App_Themes\Aqua\GridView\gvGroupPanelBackground.gif" />
+    <Content Include="App_Themes\Aqua\GridView\gvHeaderBackground.gif" />
+    <Content Include="App_Themes\Aqua\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Aqua\GridView\gvPagerBottomPanelBackground.gif" />
+    <Content Include="App_Themes\Aqua\GridView\Loading.gif" />
+    <Content Include="App_Themes\Aqua\GridView\sprite.css" />
+    <Content Include="App_Themes\Aqua\GridView\sprite.gif" />
+    <Content Include="App_Themes\Aqua\GridView\sprite.png" />
+    <Content Include="App_Themes\Aqua\GridView\styles.css" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\Loading.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\sprite.css" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\sprite.gif" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\Aqua\HtmlEditor\styles.css" />
+    <Content Include="App_Themes\Aqua\PivotGrid\FLsprite.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\FLsprite.png" />
+    <Content Include="App_Themes\Aqua\PivotGrid\Loading.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pgColumnFieldBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pgHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pgHeaderHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\pgPagerBack.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\Aqua\PivotGrid\sprite.gif" />
+    <Content Include="App_Themes\Aqua\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\Aqua\PivotGrid\styles.css" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\ltcorner.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\resHeader.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\ToolbarBack.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\vnBtnBack.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\vnBtnBackH.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\CssImages\vnBtnBackP.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\Loading.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\sprite.css" />
+    <Content Include="App_Themes\Aqua\Scheduler\sprite.gif" />
+    <Content Include="App_Themes\Aqua\Scheduler\sprite.png" />
+    <Content Include="App_Themes\Aqua\Scheduler\styles.css" />
+    <Content Include="App_Themes\Aqua\SpellChecker\Loading.gif" />
+    <Content Include="App_Themes\Aqua\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\Aqua\SpellChecker\styles.css" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\HeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineFirst.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineFirstRtl.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineLast.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineLastRtl.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineMiddle.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineMiddleRtl.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\CssImages\TreeLineRoot.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\Loading.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\sprite.css" />
+    <Content Include="App_Themes\Aqua\TreeList\sprite.gif" />
+    <Content Include="App_Themes\Aqua\TreeList\sprite.png" />
+    <Content Include="App_Themes\Aqua\TreeList\styles.css" />
+    <Content Include="App_Themes\Aqua\Web\dxpcFooterBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\Aqua\Web\Loading.gif" />
+    <Content Include="App_Themes\Aqua\Web\mBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mGutterRightBorder.gif" />
+    <Content Include="App_Themes\Aqua\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mScrollBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mScrollSBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mSeparator.gif" />
+    <Content Include="App_Themes\Aqua\Web\mVertBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mVertHBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\mVerticalSeparator.gif" />
+    <Content Include="App_Themes\Aqua\Web\mVertSBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\nbGroupHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\nbLoading.gif" />
+    <Content Include="App_Themes\Aqua\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\rcMapImage.png" />
+    <Content Include="App_Themes\Aqua\Web\rpBottomEdge.gif" />
+    <Content Include="App_Themes\Aqua\Web\rpHeaderBackground.gif" />
+    <Content Include="App_Themes\Aqua\Web\rpLeftEdge.gif" />
+    <Content Include="App_Themes\Aqua\Web\rpNoHeaderTopEdge.gif" />
+    <Content Include="App_Themes\Aqua\Web\splHSeparatorBackground.png" />
+    <Content Include="App_Themes\Aqua\Web\splHSeparatorBackgroundHover.png" />
+    <Content Include="App_Themes\Aqua\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\Aqua\Web\splVSeparatorBackground.png" />
+    <Content Include="App_Themes\Aqua\Web\splVSeparatorBackgroundHover.png" />
+    <Content Include="App_Themes\Aqua\Web\sprite.css" />
+    <Content Include="App_Themes\Aqua\Web\sprite.gif" />
+    <Content Include="App_Themes\Aqua\Web\sprite.png" />
+    <Content Include="App_Themes\Aqua\Web\styles.css" />
+    <Content Include="App_Themes\Aqua\Web\tcTabBottomBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabBottomHottrackedBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabLeftBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabLeftHottrackedBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabRightBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabRightHottrackedBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabTopBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tcTabTopHottrackedBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\tvElbow.gif" />
+    <Content Include="App_Themes\Aqua\Web\tvElbowRtl.gif" />
+    <Content Include="App_Themes\Aqua\Web\tvLine.gif" />
+    <Content Include="App_Themes\Aqua\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\Aqua\Web\ucButtonBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\ucButtonDisabledBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\ucButtonHoverBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\ucButtonPressedBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\ucProgressBack.gif" />
+    <Content Include="App_Themes\Aqua\Web\ucProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\background.jpg" />
+    <Content Include="App_Themes\Aqua\Xaf\BackgroundRepeat.gif" />
+    <Content Include="App_Themes\Aqua\Xaf\Logo.png" />
+    <Content Include="App_Themes\Aqua\Xaf\opacity50.png" />
+    <Content Include="App_Themes\Aqua\Xaf\styles.css" />
+    <Content Include="App_Themes\Aqua\Xaf\styles_xaf.css" />
+    <Content Include="App_Themes\Aqua\Xaf\template.css" />
+    <Content Include="App_Themes\Aqua\Xaf\template_xaf.css" />
+    <Content Include="App_Themes\Aqua\XtraReports\sprite.css" />
+    <Content Include="App_Themes\Aqua\XtraReports\sprite.gif" />
+    <Content Include="App_Themes\Aqua\XtraReports\sprite.png" />
+    <Content Include="App_Themes\Glass\Chart\Loading.gif" />
+    <Content Include="App_Themes\Glass\Chart\styles.css" />
+    <Content Include="App_Themes\Glass\Editors\caChallengeImageBack.png" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonCheckedBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonEditButtonBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonEditButtonBackDis.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonHoverBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonPressedBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtProgressBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtProgressPositionBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinIncBtnHBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinIncBtnPBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinLargeIncBtnBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinLargeIncBtnHBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinLargeIncBtnPBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\lbHeaderBackground.gif" />
+    <Content Include="App_Themes\Glass\Editors\Loading.gif" />
+    <Content Include="App_Themes\Glass\Editors\sprite.css" />
+    <Content Include="App_Themes\Glass\Editors\sprite.gif" />
+    <Content Include="App_Themes\Glass\Editors\sprite.png" />
+    <Content Include="App_Themes\Glass\Editors\styles.css" />
+    <Content Include="App_Themes\Glass\GridView\gvGroupPanelBackground.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvGroupPanelSelBackground.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvHeaderBackground.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Glass\GridView\Loading.gif" />
+    <Content Include="App_Themes\Glass\GridView\sprite.css" />
+    <Content Include="App_Themes\Glass\GridView\sprite.gif" />
+    <Content Include="App_Themes\Glass\GridView\sprite.png" />
+    <Content Include="App_Themes\Glass\GridView\styles.css" />
+    <Content Include="App_Themes\Glass\HtmlEditor\dfFooterBack.gif" />
+    <Content Include="App_Themes\Glass\HtmlEditor\Loading.gif" />
+    <Content Include="App_Themes\Glass\HtmlEditor\sprite.css" />
+    <Content Include="App_Themes\Glass\HtmlEditor\sprite.gif" />
+    <Content Include="App_Themes\Glass\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\Glass\HtmlEditor\styles.css" />
+    <Content Include="App_Themes\Glass\PivotGrid\Loading.gif" />
+    <Content Include="App_Themes\Glass\PivotGrid\pgCustomizationFormBackground.gif" />
+    <Content Include="App_Themes\Glass\PivotGrid\pgFilterAreaBack.gif" />
+    <Content Include="App_Themes\Glass\PivotGrid\pgFilterPanelBack.gif" />
+    <Content Include="App_Themes\Glass\PivotGrid\pgHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\PivotGrid\pgHeaderBackHot.gif" />
+    <Content Include="App_Themes\Glass\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\Glass\PivotGrid\sprite.gif" />
+    <Content Include="App_Themes\Glass\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\Glass\PivotGrid\styles.css" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\AdaBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\ButtonBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\ButtonHoverBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\ButtonPressedBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\HeaderAltBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\HeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\NavigationButtonBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\ResHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\ToolbarBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\ViewSelectorButtonBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\ViewSelectorButtonCheckedBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\ViewSelectorButtonHoverBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\CssImages\ViewSelectorButtonPressedBack.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\Loading.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\sprite.css" />
+    <Content Include="App_Themes\Glass\Scheduler\sprite.gif" />
+    <Content Include="App_Themes\Glass\Scheduler\sprite.png" />
+    <Content Include="App_Themes\Glass\Scheduler\styles.css" />
+    <Content Include="App_Themes\Glass\SpellChecker\dfFooterBack.gif" />
+    <Content Include="App_Themes\Glass\SpellChecker\Loading.gif" />
+    <Content Include="App_Themes\Glass\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\Glass\SpellChecker\styles.css" />
+    <Content Include="App_Themes\Glass\TreeList\CssImages\HeaderBack.gif" />
+    <Content Include="App_Themes\Glass\TreeList\CssImages\TreeLineFirst.gif" />
+    <Content Include="App_Themes\Glass\TreeList\CssImages\TreeLineFirstRtl.gif" />
+    <Content Include="App_Themes\Glass\TreeList\CssImages\TreeLineLast.gif" />
+    <Content Include="App_Themes\Glass\TreeList\CssImages\TreeLineLastRtl.gif" />
+    <Content Include="App_Themes\Glass\TreeList\CssImages\TreeLineMiddle.gif" />
+    <Content Include="App_Themes\Glass\TreeList\CssImages\TreeLineMiddleRtl.gif" />
+    <Content Include="App_Themes\Glass\TreeList\CssImages\TreeLineRoot.gif" />
+    <Content Include="App_Themes\Glass\TreeList\Loading.gif" />
+    <Content Include="App_Themes\Glass\TreeList\sprite.css" />
+    <Content Include="App_Themes\Glass\TreeList\sprite.gif" />
+    <Content Include="App_Themes\Glass\TreeList\sprite.png" />
+    <Content Include="App_Themes\Glass\TreeList\styles.css" />
+    <Content Include="App_Themes\Glass\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\Glass\Web\Loading.gif" />
+    <Content Include="App_Themes\Glass\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mLargeItemBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mLargeItemHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mLargeItemSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mScrollBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mScrollHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mScrollSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mVItemBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mVItemHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mVItemSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\nbHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\nbHeaderHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcContentBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcContentWithTabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcFooterBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Glass\Web\rcMapImage.png" />
+    <Content Include="App_Themes\Glass\Web\rpContentBack.gif" />
+    <Content Include="App_Themes\Glass\Web\rpHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\rpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\Glass\Web\rpHeaderRightEdge.gif" />
+    <Content Include="App_Themes\Glass\Web\rpLeftRightEdge.gif" />
+    <Content Include="App_Themes\Glass\Web\smLevel0Back.gif" />
+    <Content Include="App_Themes\Glass\Web\splHSeparatorBackground.png" />
+    <Content Include="App_Themes\Glass\Web\splHSeparatorBackgroundHover.png" />
+    <Content Include="App_Themes\Glass\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\Glass\Web\splVSeparatorBackground.png" />
+    <Content Include="App_Themes\Glass\Web\splVSeparatorBackgroundHover.png" />
+    <Content Include="App_Themes\Glass\Web\sprite.css" />
+    <Content Include="App_Themes\Glass\Web\sprite.gif" />
+    <Content Include="App_Themes\Glass\Web\sprite.png" />
+    <Content Include="App_Themes\Glass\Web\styles.css" />
+    <Content Include="App_Themes\Glass\Web\tcATabBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcATabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcContentBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcHTabBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcHTabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcScrollBtnBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcScrollBtnDisabledBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcScrollBtnHoverBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcScrollBtnPressedBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcTabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tiHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tvElbow.gif" />
+    <Content Include="App_Themes\Glass\Web\tvElbowRtl.gif" />
+    <Content Include="App_Themes\Glass\Web\tvLine.gif" />
+    <Content Include="App_Themes\Glass\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\Glass\Web\ucButtonBack.gif" />
+    <Content Include="App_Themes\Glass\Web\ucButtonHoverBack.gif" />
+    <Content Include="App_Themes\Glass\Web\ucButtonPressedBack.gif" />
+    <Content Include="App_Themes\Glass\Web\ucProgressBack.gif" />
+    <Content Include="App_Themes\Glass\Web\ucProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\Glass\Xaf\background.jpg" />
+    <Content Include="App_Themes\Glass\Xaf\Logo.png" />
+    <Content Include="App_Themes\Glass\Xaf\opacity50.png" />
+    <Content Include="App_Themes\Glass\Xaf\styles.css" />
+    <Content Include="App_Themes\Glass\Xaf\styles_xaf.css" />
+    <Content Include="App_Themes\Glass\Xaf\template.css" />
+    <Content Include="App_Themes\Glass\Xaf\template_xaf.css" />
+    <Content Include="App_Themes\Glass\XtraReports\sprite.css" />
+    <Content Include="App_Themes\Glass\XtraReports\sprite.gif" />
+    <Content Include="App_Themes\Glass\XtraReports\sprite.png" />
+    <Content Include="App_Themes\PlasticBlue\Chart\Loading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Chart\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtButtonBackHover.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtButtonEditButtonBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtButtonEditButtonBackDis.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtCalendarButtonBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtCalendarButtonHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtCalendarButtonPBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtCalendarFooterBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtCalendarHeaderBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtProgressPositionBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtSpinDecBtnHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtSpinDecBtnPBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtSpinIncBtnHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtSpinIncBtnPBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtSpinLargeIncBtnBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtSpinLargeIncBtnHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\edtSpinLargeIncBtnPBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\lbHeaderBackground.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\Loading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\sprite.css" />
+    <Content Include="App_Themes\PlasticBlue\Editors\sprite.gif" />
+    <Content Include="App_Themes\PlasticBlue\Editors\sprite.png" />
+    <Content Include="App_Themes\PlasticBlue\Editors\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\GridView\gvHeaderBackground.gif" />
+    <Content Include="App_Themes\PlasticBlue\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\PlasticBlue\GridView\Loading.gif" />
+    <Content Include="App_Themes\PlasticBlue\GridView\sprite.css" />
+    <Content Include="App_Themes\PlasticBlue\GridView\sprite.gif" />
+    <Content Include="App_Themes\PlasticBlue\GridView\sprite.png" />
+    <Content Include="App_Themes\PlasticBlue\GridView\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\HtmlEditor\dfFooterBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\HtmlEditor\Loading.gif" />
+    <Content Include="App_Themes\PlasticBlue\HtmlEditor\sprite.css" />
+    <Content Include="App_Themes\PlasticBlue\HtmlEditor\sprite.gif" />
+    <Content Include="App_Themes\PlasticBlue\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\PlasticBlue\HtmlEditor\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\PivotGrid\Loading.gif" />
+    <Content Include="App_Themes\PlasticBlue\PivotGrid\pgCustomizationFormBackground.gif" />
+    <Content Include="App_Themes\PlasticBlue\PivotGrid\pgHeaderBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\PivotGrid\pgHeaderBackHot.gif" />
+    <Content Include="App_Themes\PlasticBlue\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\PlasticBlue\PivotGrid\sprite.gif" />
+    <Content Include="App_Themes\PlasticBlue\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\PlasticBlue\PivotGrid\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\AdaBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\ButtonBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\ButtonHoverBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\HeaderAltBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\HeaderBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\NavigationButtonBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\ResHeaderBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\ToolbarBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\ViewNavigatorButtonBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\ViewNavigatorButtonBackHover.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\CssImages\ViewNavigatorButtonBackPressed.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\Loading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\sprite.css" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\sprite.gif" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\sprite.png" />
+    <Content Include="App_Themes\PlasticBlue\Scheduler\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\SpellChecker\Loading.gif" />
+    <Content Include="App_Themes\PlasticBlue\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\PlasticBlue\SpellChecker\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\CssImages\HeaderBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\CssImages\TreeLineFirst.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\CssImages\TreeLineFirstRtl.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\CssImages\TreeLineLast.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\CssImages\TreeLineLastRtl.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\CssImages\TreeLineMiddle.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\CssImages\TreeLineMiddleRtl.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\CssImages\TreeLineRoot.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\Loading.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\sprite.css" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\sprite.gif" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\sprite.png" />
+    <Content Include="App_Themes\PlasticBlue\TreeList\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\Web\dvLoading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\dvPagerBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\Loading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\mItemBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\mScrollBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\mScrollHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\mSeparator.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\mSeparatorHor.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\nbHeaderBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\nbLoading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\ncLoading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\pcFooterBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\rcMapImage.png" />
+    <Content Include="App_Themes\PlasticBlue\Web\rpBottomEdge.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\rpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\rpHeaderRightEdge.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\rpHeaderSeparator.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\rpHeaderTopEdge.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\rpLeftEdge.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\rpNoHeaderTopEdge.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\rpRightEdge.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\smLevel0Back.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\splHSeparatorBackgroundHover.png" />
+    <Content Include="App_Themes\PlasticBlue\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\splVSeparatorBackgroundHover.png" />
+    <Content Include="App_Themes\PlasticBlue\Web\sprite.css" />
+    <Content Include="App_Themes\PlasticBlue\Web\sprite.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\sprite.png" />
+    <Content Include="App_Themes\PlasticBlue\Web\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcContentBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcContentBackHor.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcLoading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabABack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabBottomABack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabBottomBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabBottomHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabLeftABack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabLeftBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabLeftHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabRightABack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabRightBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tcTabRightHBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tiGroupHeader.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tiLoading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tvElbow.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tvElbowRtl.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tvLine.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\ucButtonBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\ucButtonHoverBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Web\ucProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\PlasticBlue\Xaf\background.jpg" />
+    <Content Include="App_Themes\PlasticBlue\Xaf\Logo.png" />
+    <Content Include="App_Themes\PlasticBlue\Xaf\opacity50.png" />
+    <Content Include="App_Themes\PlasticBlue\Xaf\styles.css" />
+    <Content Include="App_Themes\PlasticBlue\Xaf\styles_xaf.css" />
+    <Content Include="App_Themes\PlasticBlue\Xaf\template.css" />
+    <Content Include="App_Themes\PlasticBlue\Xaf\template_xaf.css" />
+    <Content Include="App_Themes\PlasticBlue\XtraReports\sprite.css" />
+    <Content Include="App_Themes\PlasticBlue\XtraReports\sprite.gif" />
+    <Content Include="App_Themes\PlasticBlue\XtraReports\sprite.png" />
+    <Content Include="App_Themes\RedWine\Chart\Loading.gif" />
+    <Content Include="App_Themes\RedWine\Chart\styles.css" />
+    <Content Include="App_Themes\RedWine\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtButtonBackDis.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtButtonCheckedBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtButtonHoverBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtButtonPressedBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtCalendarHeaderBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtDropDownBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtDropDownBackDis.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtProgressBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtProgressPositionBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtSpinDecButtonHoverBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtSpinDecButtonPressedBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtSpinIncButtonHoverBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\edtSpinIncButtonPressedBack.gif" />
+    <Content Include="App_Themes\RedWine\Editors\lbHeaderBackground.gif" />
+    <Content Include="App_Themes\RedWine\Editors\Loading.gif" />
+    <Content Include="App_Themes\RedWine\Editors\sprite.css" />
+    <Content Include="App_Themes\RedWine\Editors\sprite.gif" />
+    <Content Include="App_Themes\RedWine\Editors\sprite.png" />
+    <Content Include="App_Themes\RedWine\Editors\styles.css" />
+    <Content Include="App_Themes\RedWine\GridView\gvHeaderBackground.gif" />
+    <Content Include="App_Themes\RedWine\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\RedWine\GridView\Loading.gif" />
+    <Content Include="App_Themes\RedWine\GridView\sprite.css" />
+    <Content Include="App_Themes\RedWine\GridView\sprite.gif" />
+    <Content Include="App_Themes\RedWine\GridView\sprite.png" />
+    <Content Include="App_Themes\RedWine\GridView\styles.css" />
+    <Content Include="App_Themes\RedWine\HtmlEditor\Loading.gif" />
+    <Content Include="App_Themes\RedWine\HtmlEditor\sprite.css" />
+    <Content Include="App_Themes\RedWine\HtmlEditor\sprite.gif" />
+    <Content Include="App_Themes\RedWine\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\RedWine\HtmlEditor\styles.css" />
+    <Content Include="App_Themes\RedWine\PivotGrid\Loading.gif" />
+    <Content Include="App_Themes\RedWine\PivotGrid\pcHeaderBack.gif" />
+    <Content Include="App_Themes\RedWine\PivotGrid\pgHeaderBack.gif" />
+    <Content Include="App_Themes\RedWine\PivotGrid\pgHeaderHoverBack.gif" />
+    <Content Include="App_Themes\RedWine\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\RedWine\PivotGrid\sprite.gif" />
+    <Content Include="App_Themes\RedWine\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\RedWine\PivotGrid\styles.css" />
+    <Content Include="App_Themes\RedWine\Scheduler\CssImages\today.gif" />
+    <Content Include="App_Themes\RedWine\Scheduler\CssImages\vnBtnBack.gif" />
+    <Content Include="App_Themes\RedWine\Scheduler\CssImages\vnBtnBackH.gif" />
+    <Content Include="App_Themes\RedWine\Scheduler\CssImages\vnBtnBackP.gif" />
+    <Content Include="App_Themes\RedWine\Scheduler\CssImages\vsBtnBack.gif" />
+    <Content Include="App_Themes\RedWine\Scheduler\CssImages\vsBtnBackH.gif" />
+    <Content Include="App_Themes\RedWine\Scheduler\CssImages\vsBtnBackP.gif" />
+    <Content Include="App_Themes\RedWine\Scheduler\Loading.gif" />
+    <Content Include="App_Themes\RedWine\Scheduler\sprite.css" />
+    <Content Include="App_Themes\RedWine\Scheduler\sprite.gif" />
+    <Content Include="App_Themes\RedWine\Scheduler\sprite.png" />
+    <Content Include="App_Themes\RedWine\Scheduler\styles.css" />
+    <Content Include="App_Themes\RedWine\SpellChecker\Loading.gif" />
+    <Content Include="App_Themes\RedWine\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\RedWine\SpellChecker\styles.css" />
+    <Content Include="App_Themes\RedWine\TreeList\CssImages\HeaderBack.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\CssImages\TreeLineFirst.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\CssImages\TreeLineFirstRtl.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\CssImages\TreeLineLast.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\CssImages\TreeLineLastRtl.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\CssImages\TreeLineMiddle.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\CssImages\TreeLineMiddleRtl.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\CssImages\TreeLineRoot.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\Loading.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\sprite.css" />
+    <Content Include="App_Themes\RedWine\TreeList\sprite.gif" />
+    <Content Include="App_Themes\RedWine\TreeList\sprite.png" />
+    <Content Include="App_Themes\RedWine\TreeList\styles.css" />
+    <Content Include="App_Themes\RedWine\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\RedWine\Web\Loading.gif" />
+    <Content Include="App_Themes\RedWine\Web\mBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\mGutter.gif" />
+    <Content Include="App_Themes\RedWine\Web\mGutterRightBorder.gif" />
+    <Content Include="App_Themes\RedWine\Web\mGutterRtl.gif" />
+    <Content Include="App_Themes\RedWine\Web\mItemBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\mScrollBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\mScrollHBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\mScrollSBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\mSeparator.gif" />
+    <Content Include="App_Themes\RedWine\Web\mVerticalSeparator.gif" />
+    <Content Include="App_Themes\RedWine\Web\nbGroupHeaderBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\nbLoading.gif" />
+    <Content Include="App_Themes\RedWine\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\rcMapImage.png" />
+    <Content Include="App_Themes\RedWine\Web\rpBottomEdge.gif" />
+    <Content Include="App_Themes\RedWine\Web\rpHeaderBackground.gif" />
+    <Content Include="App_Themes\RedWine\Web\rpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\RedWine\Web\rpHeaderRightEdge.gif" />
+    <Content Include="App_Themes\RedWine\Web\rpLeftEdge.gif" />
+    <Content Include="App_Themes\RedWine\Web\rpNoHeaderTopEdge.gif" />
+    <Content Include="App_Themes\RedWine\Web\rpRightEdge.gif" />
+    <Content Include="App_Themes\RedWine\Web\rpTopEdge.gif" />
+    <Content Include="App_Themes\RedWine\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\RedWine\Web\sprite.css" />
+    <Content Include="App_Themes\RedWine\Web\sprite.gif" />
+    <Content Include="App_Themes\RedWine\Web\sprite.png" />
+    <Content Include="App_Themes\RedWine\Web\styles.css" />
+    <Content Include="App_Themes\RedWine\Web\tcTabBottomBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\tcTabBottomHottrackedBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\tcTabLeftBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\tcTabLeftHottrackedBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\tcTabRightBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\tcTabRightHottrackedBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\tcTabTopBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\tcTabTopHottrackedBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\tvElbow.gif" />
+    <Content Include="App_Themes\RedWine\Web\tvElbowRtl.gif" />
+    <Content Include="App_Themes\RedWine\Web\tvLine.gif" />
+    <Content Include="App_Themes\RedWine\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\RedWine\Web\ucButtonBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\ucButtonDisabledBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\ucButtonHoverBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\ucButtonPressedBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\ucProgressBack.gif" />
+    <Content Include="App_Themes\RedWine\Web\ucProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\RedWine\Xaf\background.jpg" />
+    <Content Include="App_Themes\RedWine\Xaf\Logo.png" />
+    <Content Include="App_Themes\RedWine\Xaf\opacity50.png" />
+    <Content Include="App_Themes\RedWine\Xaf\styles.css" />
+    <Content Include="App_Themes\RedWine\Xaf\styles_xaf.css" />
+    <Content Include="App_Themes\RedWine\Xaf\template.css" />
+    <Content Include="App_Themes\RedWine\Xaf\template_xaf.css" />
+    <Content Include="App_Themes\RedWine\XtraReports\sprite.css" />
+    <Content Include="App_Themes\RedWine\XtraReports\sprite.gif" />
+    <Content Include="App_Themes\RedWine\XtraReports\sprite.png" />
+    <Content Include="css\DropDownListStyle.css" />
+    <Content Include="css\HelpDesign.css" />
+    <Content Include="css\login-box.css" />
+    <Content Include="css\Tab.css" />
+    <Content Include="css\treeStyle.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Help.aspx" />
+    <Content Include="HelpContent.aspx" />
+    <Content Include="images\Help\HelpDesign\roundedcornr_590516_bl.png" />
+    <Content Include="images\Help\HelpDesign\roundedcornr_590516_br.png" />
+    <Content Include="images\Help\HelpDesign\roundedcornr_590516_tl.png" />
+    <Content Include="images\Help\HelpDesign\roundedcornr_590516_tr.png" />
+    <Content Include="images\Help\HelpImage\add.jpg" />
+    <Content Include="images\Help\HelpImage\cancel.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_11.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_12.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_17.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_18-2.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_18.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_2.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_20.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_21.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_22.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_23.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_24.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_25.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_26.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_27.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_28.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_29.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_3.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_30.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_31.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_32.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_33.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_34.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_35.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_36.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_37.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_38.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_39.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_4.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_40.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_41.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_5.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_6.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_7.jpg" />
+    <Content Include="images\Help\HelpImage\Clip_9.jpg" />
+    <Content Include="images\Help\HelpImage\edit.jpg" />
+    <Content Include="images\Help\HelpImage\login.jpg" />
+    <Content Include="images\Help\HelpImage\remove.jpg" />
+    <Content Include="images\Help\HelpImage\save.jpg" />
+    <Content Include="images\Help\HelpImage\select all.jpg" />
+    <Content Include="images\Help\HelpImage\Select.jpg" />
+    <Content Include="images\Help\treeview\col.gif" />
+    <Content Include="images\Help\treeview\exp.gif" />
+    <Content Include="images\Help\treeview\lines\dash.gif" />
+    <Content Include="images\Help\treeview\lines\dashminus.gif" />
+    <Content Include="images\Help\treeview\lines\dashplus.gif" />
+    <Content Include="images\Help\treeview\lines\i.gif" />
+    <Content Include="images\Help\treeview\lines\l.gif" />
+    <Content Include="images\Help\treeview\lines\lminus.gif" />
+    <Content Include="images\Help\treeview\lines\lplus.gif" />
+    <Content Include="images\Help\treeview\lines\minus.gif" />
+    <Content Include="images\Help\treeview\lines\noexpand.gif" />
+    <Content Include="images\Help\treeview\lines\plus.gif" />
+    <Content Include="images\Help\treeview\lines\r.gif" />
+    <Content Include="images\Help\treeview\lines\rminus.gif" />
+    <Content Include="images\Help\treeview\lines\rplus.gif" />
+    <Content Include="images\Help\treeview\lines\t.gif" />
+    <Content Include="images\Help\treeview\lines\tminus.gif" />
+    <Content Include="images\Help\treeview\lines\tplus.gif" />
+    <Content Include="images\Help\treeview\node_bg.gif" />
+    <Content Include="images\Help\treeview\node_bg_hover.gif" />
+    <Content Include="images\Help\treeview\noexp.gif" />
+    <Content Include="images\Help\treeview\spacer.gif" />
+    <Content Include="img\1leftarrow.png" />
+    <Content Include="img\1rightarrow.png" />
+    <Content Include="img\2leftarrow.png" />
+    <Content Include="img\2rightarrow.png" />
+    <Content Include="img\minimize.png" />
+    <Content Include="img\maximize.png" />
+    <Content Include="img\add.png" />
+    <Content Include="img\cancel.png" />
+    <Content Include="img\edit.png" />
+    <Content Include="img\exit.png" />
+    <Content Include="img\FilterIcon.png" />
+    <Content Include="img\help.gif" />
+    <Content Include="img\images\login-box-backg.png" />
+    <Content Include="img\images\login-btn.png" />
+    <Content Include="img\Header.jpg" />
+    <Content Include="img\remove.png" />
+    <Content Include="img\ReportViewer\FirstPage.gif" />
+    <Content Include="img\ReportViewer\FirstPageDisabled.gif" />
+    <Content Include="img\ReportViewer\LastPage.gif" />
+    <Content Include="img\ReportViewer\LastPageDisabled.gif" />
+    <Content Include="img\ReportViewer\Loading.gif" />
+    <Content Include="img\ReportViewer\MenuPrint.gif" />
+    <Content Include="img\ReportViewer\MenuPrintToDirect.gif" />
+    <Content Include="img\ReportViewer\MenuPrintToPdf.gif" />
+    <Content Include="img\ReportViewer\MenuPrintToPopupWindow.gif" />
+    <Content Include="img\ReportViewer\MenuSave.gif" />
+    <Content Include="img\ReportViewer\MenuSaveAdobePdf.gif" />
+    <Content Include="img\ReportViewer\MenuSaveBmp.gif" />
+    <Content Include="img\ReportViewer\MenuSaveCsv.gif" />
+    <Content Include="img\ReportViewer\MenuSaveDbase.gif" />
+    <Content Include="img\ReportViewer\MenuSaveDbf.gif" />
+    <Content Include="img\ReportViewer\MenuSaveGif.gif" />
+    <Content Include="img\ReportViewer\MenuSaveHtml.gif" />
+    <Content Include="img\ReportViewer\MenuSaveJpeg.gif" />
+    <Content Include="img\ReportViewer\MenuSaveMetafile.gif" />
+    <Content Include="img\ReportViewer\MenuSaveMhtWebArchive.gif" />
+    <Content Include="img\ReportViewer\MenuSaveMicrosoftExcel.gif" />
+    <Content Include="img\ReportViewer\MenuSaveMicrosoftExcel2007.gif" />
+    <Content Include="img\ReportViewer\MenuSaveMicrosoftExcelXml.gif" />
+    <Content Include="img\ReportViewer\MenuSaveMicrosoftWord2007.gif" />
+    <Content Include="img\ReportViewer\MenuSaveMicrosoftXps.gif" />
+    <Content Include="img\ReportViewer\MenuSaveOpenDocumentCalc.gif" />
+    <Content Include="img\ReportViewer\MenuSaveOpenDocumentWriter.gif" />
+    <Content Include="img\ReportViewer\MenuSavePcx.gif" />
+    <Content Include="img\ReportViewer\MenuSavePng.gif" />
+    <Content Include="img\ReportViewer\MenuSaveRichText.gif" />
+    <Content Include="img\ReportViewer\MenuSaveText.gif" />
+    <Content Include="img\ReportViewer\MenuSaveTiff.gif" />
+    <Content Include="img\ReportViewer\MenuSaveXml.gif" />
+    <Content Include="img\ReportViewer\MenuViewMode.gif" />
+    <Content Include="img\ReportViewer\MenuViewModeOnePage.gif" />
+    <Content Include="img\ReportViewer\MenuViewModeWholeReport.gif" />
+    <Content Include="img\ReportViewer\MenuZoom.gif" />
+    <Content Include="img\ReportViewer\NextPage.gif" />
+    <Content Include="img\ReportViewer\NextPageDisabled.gif" />
+    <Content Include="img\ReportViewer\PrevPage.gif" />
+    <Content Include="img\ReportViewer\PrevPageDisabled.gif" />
+    <Content Include="img\ReportViewer\Print.gif" />
+    <Content Include="img\ReportViewer\PrintDisabled.gif" />
+    <Content Include="img\ReportViewer\Save.gif" />
+    <Content Include="img\ReportViewer\SaveDisabled.gif" />
+    <Content Include="img\save.png" />
+    <Content Include="img\search.png" />
+    <Content Include="img\changePost.png" />
+    <Content Include="img\wait.png" />
+    <Content Include="js\AdminAccessRoleNavbar_onOperations.js" />
+    <Content Include="js\AdminChangePassword_onOperations.js" />
+    <Content Include="js\AdminMain_Oprations.js" />
+    <Content Include="js\ChangePassword_onOperations.js" />
+    <Content Include="js\DashboardManager_onOperations.js" />
+    <Content Include="js\DashboardUser_onOperations.js" />
+    <Content Include="js\Dashboard_onOperations.js" />
+    <Content Include="js\DefineAdminOperator_Operations.js" />
+    <Content Include="js\DefineDefaultUser_Operations.js" />
+    <Content Include="js\DefineInsteadMan_onOperations.js" />
+    <Content Include="js\DefineManagerPersonnel_Operations.js" />
+    <Content Include="js\DefinePersonnel_Operations.js" />
+    <Content Include="img\signOut.png" />
+    <Content Include="auth\ChangePassword.aspx" />
+    <Content Include="css\buttonStyle.css" />
+    <Content Include="css\gridStyle.css" />
+    <Content Include="css\lableStyle.css" />
+    <Content Include="css\panelStyle.css" />
+    <Content Include="css\tableStyle.css" />
+    <Content Include="js\BackDisable.js" />
+    <Content Include="js\DevMonthlyReport_Operations.js" />
+    <Content Include="js\HelpForm_onPageLoad.js" />
+    <Content Include="js\HelpForm_Operations.js" />
+    <Content Include="js\jquery-1.7.1.js" />
+    <Content Include="js\Login_onOperations.js" />
+    <Content Include="js\Login_onPageLoad.js" />
+    <Content Include="js\MainForm_onOperations.js" />
+    <Content Include="js\MasterPage_onOperations.js" />
+    <Content Include="js\RemainLeave_onOperations.js" />
+    <Content Include="js\ReportViewer_onOperations.js" />
+    <Content Include="js\Report_onOperations.js" />
+    <Content Include="js\SelectPost_onOperations.js" />
+    <Content Include="js\TrafficRequestOperator_Operations.js" />
+    <Content Include="MainForm.aspx" />
+    <Content Include="Operation\DashboardManager.aspx" />
+    <Content Include="Operation\DashboardUser.aspx" />
+    <Content Include="Operation\Dashbord.aspx" />
+    <Content Include="img\JPG194.jpg" />
+    <Content Include="Operation\DefineInsteadMan.aspx" />
+    <Content Include="Operation\RemainLeaveViewer.aspx" />
+    <Content Include="Operator\TrafficRequestOperator.aspx" />
+    <Content Include="Report\FrmRPRest.aspx" />
+    <Content Include="Report\DevMonthlyReport.aspx" />
+    <Content Include="Report\Report.aspx" />
+    <Content Include="Report\ReportViewer.aspx" />
+    <Content Include="SelectPost.aspx" />
+    <Content Include="Operation\RemainLeave.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\PublishProfiles\newWebClock.pubxml" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <Content Include="ReportFile\taradode afrad az terminal.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Service References\CCWinService\CCService.disco" />
+    <Content Include="Service References\CCWinService\configuration91.svcinfo" />
+    <Content Include="Service References\CCWinService\configuration.svcinfo" />
+    <Content Include="Service References\CCWinService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Service References\CCWinService\CCService.wsdl" />
+    <Content Include="ReportFile\kholase ezafe kar 5 shanbe.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\kholase Tajil.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\kholase Takhir.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\mashrohe Taradode Akhar.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\mashrohe vorode aval.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\sazman.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\CCWinService\CCService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CCWinService\CCService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CCWinService\CCService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminAccessReports.aspx.cs">
+      <DependentUpon>AdminAccessReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAccessReports.aspx.designer.cs">
+      <DependentUpon>AdminAccessReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminAccessRoleNavbar.aspx.cs">
+      <DependentUpon>AdminAccessRoleNavbar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAccessRoleNavbar.aspx.designer.cs">
+      <DependentUpon>AdminAccessRoleNavbar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminChangePassword.aspx.cs">
+      <DependentUpon>AdminChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminChangePassword.aspx.designer.cs">
+      <DependentUpon>AdminChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminInfo.aspx.cs">
+      <DependentUpon>AdminInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminInfo.aspx.designer.cs">
+      <DependentUpon>AdminInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DefineAdminOperator.aspx.cs">
+      <DependentUpon>DefineAdminOperator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DefineAdminOperator.aspx.designer.cs">
+      <DependentUpon>DefineAdminOperator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMain.aspx.cs">
+      <DependentUpon>AdminMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMain.aspx.designer.cs">
+      <DependentUpon>AdminMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DefineDefultUser.aspx.cs">
+      <DependentUpon>DefineDefultUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DefineDefultUser.aspx.designer.cs">
+      <DependentUpon>DefineDefultUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DefineManagerPersonnel.aspx.cs">
+      <DependentUpon>DefineManagerPersonnel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DefineManagerPersonnel.aspx.designer.cs">
+      <DependentUpon>DefineManagerPersonnel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DefinePersonnel.aspx.cs">
+      <DependentUpon>DefinePersonnel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DefinePersonnel.aspx.designer.cs">
+      <DependentUpon>DefinePersonnel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\log.aspx.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\log.aspx.designer.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\CacheSettingsProvider.cs" />
+    <Compile Include="AppCode\AuthenticatedUser.cs" />
+    <Compile Include="AppCode\CryptData.cs" />
+    <Compile Include="AppCode\MessageHandler.cs" />
+    <Compile Include="AppCode\PersianDateTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppCode\RefererValidation.cs" />
+    <Compile Include="AppCode\SessionHandler.cs" />
+    <Compile Include="AppCode\StringGenerator.cs" />
+    <Compile Include="auth\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="auth\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HelpContent.aspx.cs">
+      <DependentUpon>HelpContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HelpContent.aspx.designer.cs">
+      <DependentUpon>HelpContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.aspx.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainForm.aspx.designer.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\DashboardManager.aspx.cs">
+      <DependentUpon>DashboardManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\DashboardManager.aspx.designer.cs">
+      <DependentUpon>DashboardManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\DashboardUser.aspx.cs">
+      <DependentUpon>DashboardUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\DashboardUser.aspx.designer.cs">
+      <DependentUpon>DashboardUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\Dashbord.aspx.cs">
+      <DependentUpon>Dashbord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\Dashbord.aspx.designer.cs">
+      <DependentUpon>Dashbord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="auth\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="auth\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\DefineInsteadMan.aspx.cs">
+      <DependentUpon>DefineInsteadMan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\DefineInsteadMan.aspx.designer.cs">
+      <DependentUpon>DefineInsteadMan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\RemainLeaveViewer.aspx.cs">
+      <DependentUpon>RemainLeaveViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\RemainLeaveViewer.aspx.designer.cs">
+      <DependentUpon>RemainLeaveViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operator\TrafficRequestOperator.aspx.cs">
+      <DependentUpon>TrafficRequestOperator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operator\TrafficRequestOperator.aspx.designer.cs">
+      <DependentUpon>TrafficRequestOperator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pelak\Pelak.aspx.cs">
+      <DependentUpon>Pelak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pelak\Pelak.aspx.designer.cs">
+      <DependentUpon>Pelak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\FrmRPRest.aspx.cs">
+      <DependentUpon>FrmRPRest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRPRest.aspx.designer.cs">
+      <DependentUpon>FrmRPRest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DevMonthlyReport.aspx.cs">
+      <DependentUpon>DevMonthlyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\DevMonthlyReport.aspx.designer.cs">
+      <DependentUpon>DevMonthlyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RPRest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RPRest.Designer.cs">
+      <DependentUpon>RPRest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectPost.aspx.cs">
+      <DependentUpon>SelectPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectPost.aspx.designer.cs">
+      <DependentUpon>SelectPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CCWinService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="auth\Login.aspx" />
+    <Content Include="Pelak\Pelak.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\style.css" />
+    <Content Include="img\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\Site.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\DXSplashScreen\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="ReportFile\Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Help.aspx.fa.resx">
+      <DependentUpon>Help.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.aspx.resx">
+      <DependentUpon>Help.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Report\RPRest.resx">
+      <DependentUpon>RPRest.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Aqua\ASPxButton.skin" />
+    <Content Include="App_Themes\Aqua\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCalendar.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\Aqua\ASPxChartControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\Aqua\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxComboBox.skin" />
+    <Content Include="App_Themes\Aqua\ASPxDataView.skin" />
+    <Content Include="App_Themes\Aqua\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\Aqua\ASPxDockPanel.skin" />
+    <Content Include="App_Themes\Aqua\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxFileManager.skin" />
+    <Content Include="App_Themes\Aqua\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxGridLookup.skin" />
+    <Content Include="App_Themes\Aqua\ASPxGridView.skin" />
+    <Content Include="App_Themes\Aqua\ASPxHeadline.skin" />
+    <Content Include="App_Themes\Aqua\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\Aqua\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\Aqua\ASPxLabel.skin" />
+    <Content Include="App_Themes\Aqua\ASPxListBox.skin" />
+    <Content Include="App_Themes\Aqua\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\Aqua\ASPxMemo.skin" />
+    <Content Include="App_Themes\Aqua\ASPxMenu.skin" />
+    <Content Include="App_Themes\Aqua\ASPxNavBar.skin" />
+    <Content Include="App_Themes\Aqua\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPageControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPager.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\Aqua\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\Aqua\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\Aqua\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\Aqua\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\Aqua\ASPxScheduler.skin" />
+    <Content Include="App_Themes\Aqua\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\Aqua\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxSplitter.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTabControl.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTextBox.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTreeList.skin" />
+    <Content Include="App_Themes\Aqua\ASPxTreeView.skin" />
+    <Content Include="App_Themes\Aqua\ASPxUploadControl.skin" />
+    <Content Include="App_Themes\Aqua\MonthEdit.skin" />
+    <Content Include="App_Themes\Aqua\RecurrenceTypeEdit.skin" />
+    <Content Include="App_Themes\Aqua\ReportDocumentMap.skin" />
+    <Content Include="App_Themes\Aqua\ReportParametersPanel.skin" />
+    <Content Include="App_Themes\Aqua\ReportToolbar.skin" />
+    <Content Include="App_Themes\Aqua\ReportViewer.skin" />
+    <Content Include="App_Themes\Aqua\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\Aqua\WeekOfMonthEdit.skin" />
+    <Content Include="App_Themes\Glass\ASPxButton.skin" />
+    <Content Include="App_Themes\Glass\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\Glass\ASPxCalendar.skin" />
+    <Content Include="App_Themes\Glass\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\Glass\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\Glass\ASPxChartControl.skin" />
+    <Content Include="App_Themes\Glass\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\Glass\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\Glass\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\Glass\ASPxComboBox.skin" />
+    <Content Include="App_Themes\Glass\ASPxDataView.skin" />
+    <Content Include="App_Themes\Glass\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\Glass\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\Glass\ASPxDockPanel.skin" />
+    <Content Include="App_Themes\Glass\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\Glass\ASPxFileManager.skin" />
+    <Content Include="App_Themes\Glass\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\Glass\ASPxGridLookup.skin" />
+    <Content Include="App_Themes\Glass\ASPxGridView.skin" />
+    <Content Include="App_Themes\Glass\ASPxHeadline.skin" />
+    <Content Include="App_Themes\Glass\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\Glass\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\Glass\ASPxLabel.skin" />
+    <Content Include="App_Themes\Glass\ASPxListBox.skin" />
+    <Content Include="App_Themes\Glass\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\Glass\ASPxMemo.skin" />
+    <Content Include="App_Themes\Glass\ASPxMenu.skin" />
+    <Content Include="App_Themes\Glass\ASPxNavBar.skin" />
+    <Content Include="App_Themes\Glass\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\Glass\ASPxPageControl.skin" />
+    <Content Include="App_Themes\Glass\ASPxPager.skin" />
+    <Content Include="App_Themes\Glass\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\Glass\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\Glass\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\Glass\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\Glass\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\Glass\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\Glass\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\Glass\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\Glass\ASPxScheduler.skin" />
+    <Content Include="App_Themes\Glass\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\Glass\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\Glass\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\Glass\ASPxSplitter.skin" />
+    <Content Include="App_Themes\Glass\ASPxTabControl.skin" />
+    <Content Include="App_Themes\Glass\ASPxTextBox.skin" />
+    <Content Include="App_Themes\Glass\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\Glass\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\Glass\ASPxTreeList.skin" />
+    <Content Include="App_Themes\Glass\ASPxTreeView.skin" />
+    <Content Include="App_Themes\Glass\ASPxUploadControl.skin" />
+    <Content Include="App_Themes\Glass\MonthEdit.skin" />
+    <Content Include="App_Themes\Glass\RecurrenceTypeEdit.skin" />
+    <Content Include="App_Themes\Glass\ReportDocumentMap.skin" />
+    <Content Include="App_Themes\Glass\ReportParametersPanel.skin" />
+    <Content Include="App_Themes\Glass\ReportToolbar.skin" />
+    <Content Include="App_Themes\Glass\ReportViewer.skin" />
+    <Content Include="App_Themes\Glass\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\Glass\WeekOfMonthEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxButton.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxCalendar.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxChartControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxComboBox.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxDataView.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxDockPanel.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxFileManager.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxGridLookup.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxGridView.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxHeadline.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxLabel.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxListBox.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxMemo.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxMenu.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxNavBar.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxPageControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxPager.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxScheduler.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxSplitter.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxTabControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxTextBox.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxTreeList.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxTreeView.skin" />
+    <Content Include="App_Themes\PlasticBlue\ASPxUploadControl.skin" />
+    <Content Include="App_Themes\PlasticBlue\MonthEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\RecurrenceTypeEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\ReportDocumentMap.skin" />
+    <Content Include="App_Themes\PlasticBlue\ReportParametersPanel.skin" />
+    <Content Include="App_Themes\PlasticBlue\ReportToolbar.skin" />
+    <Content Include="App_Themes\PlasticBlue\ReportViewer.skin" />
+    <Content Include="App_Themes\PlasticBlue\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\PlasticBlue\WeekOfMonthEdit.skin" />
+    <Content Include="App_Themes\RedWine\ASPxButton.skin" />
+    <Content Include="App_Themes\RedWine\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\RedWine\ASPxCalendar.skin" />
+    <Content Include="App_Themes\RedWine\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\RedWine\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\RedWine\ASPxChartControl.skin" />
+    <Content Include="App_Themes\RedWine\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\RedWine\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\RedWine\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\RedWine\ASPxComboBox.skin" />
+    <Content Include="App_Themes\RedWine\ASPxDataView.skin" />
+    <Content Include="App_Themes\RedWine\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\RedWine\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\RedWine\ASPxDockPanel.skin" />
+    <Content Include="App_Themes\RedWine\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\RedWine\ASPxFileManager.skin" />
+    <Content Include="App_Themes\RedWine\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\RedWine\ASPxGridLookup.skin" />
+    <Content Include="App_Themes\RedWine\ASPxGridView.skin" />
+    <Content Include="App_Themes\RedWine\ASPxHeadline.skin" />
+    <Content Include="App_Themes\RedWine\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\RedWine\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\RedWine\ASPxLabel.skin" />
+    <Content Include="App_Themes\RedWine\ASPxListBox.skin" />
+    <Content Include="App_Themes\RedWine\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\RedWine\ASPxMemo.skin" />
+    <Content Include="App_Themes\RedWine\ASPxMenu.skin" />
+    <Content Include="App_Themes\RedWine\ASPxNavBar.skin" />
+    <Content Include="App_Themes\RedWine\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\RedWine\ASPxPageControl.skin" />
+    <Content Include="App_Themes\RedWine\ASPxPager.skin" />
+    <Content Include="App_Themes\RedWine\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\RedWine\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\RedWine\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\RedWine\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\RedWine\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\RedWine\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\RedWine\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\RedWine\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\RedWine\ASPxScheduler.skin" />
+    <Content Include="App_Themes\RedWine\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\RedWine\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\RedWine\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\RedWine\ASPxSplitter.skin" />
+    <Content Include="App_Themes\RedWine\ASPxTabControl.skin" />
+    <Content Include="App_Themes\RedWine\ASPxTextBox.skin" />
+    <Content Include="App_Themes\RedWine\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\RedWine\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\RedWine\ASPxTreeList.skin" />
+    <Content Include="App_Themes\RedWine\ASPxTreeView.skin" />
+    <Content Include="App_Themes\RedWine\ASPxUploadControl.skin" />
+    <Content Include="App_Themes\RedWine\MonthEdit.skin" />
+    <Content Include="App_Themes\RedWine\RecurrenceTypeEdit.skin" />
+    <Content Include="App_Themes\RedWine\ReportDocumentMap.skin" />
+    <Content Include="App_Themes\RedWine\ReportParametersPanel.skin" />
+    <Content Include="App_Themes\RedWine\ReportToolbar.skin" />
+    <Content Include="App_Themes\RedWine\ReportViewer.skin" />
+    <Content Include="App_Themes\RedWine\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\RedWine\WeekOfMonthEdit.skin" />
+    <Content Include="js\Web.config" />
+    <None Include="img\ReportViewer\Thumbs.db" />
+    <Content Include="ReportFile\ezafe kar.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\ezafe kari va keshik.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\gheibat.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\hozor va ghiab dar lahze.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\kasri kar bish az had.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\kholase ezafe kar va keshik mahane.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\kholase gheibat.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\kholase kasri kar.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\kholase taradode naghes.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\mashrohe ezafe kar 5 shanbe.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\mashrohe ezafe kar va keshik mahiane.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\mashrohe gheibat.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\mashrohe kasri kar.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\mojavez rozane.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\mojavez saati.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\morakhasi estehghaghi va mande.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\personel list as part.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\prsonel list as job.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\rekord haie eslaah shode.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\ReportMonthly.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\taradode naghes.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReportFile\vorod va khoroj persenel.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Report\RPRest.repx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASPWebClock.Infrastructure\ASPWebClock.Infrastructure.csproj">
+      <Project>{a5b14da2-feb0-4053-89e2-6b590119a935}</Project>
+      <Name>ASPWebClock.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{585bebb8-d398-4961-9c2a-f021e3721b12}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CCWinService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASPWebClock.Infrastructure\ASPWebClock.Infrastructure.csproj">
+      <Project>{a5b14da2-feb0-4053-89e2-6b590119a935}</Project>
+      <Name>ASPWebClock.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1228</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties BuildVersion_StartDate="2013/1/19" BuildVersion_AssemblyInfoFilename="" BuildVersion_BuildVersioningStyle="None.None.None.None" BuildVersion_UpdateFileVersion="False" BuildVersion_UpdateAssemblyVersion="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
